@@ -3,7 +3,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__),'..','..')))
 import pyrebase
 
-class readDB:
+class writeDB:
     def __init__(self):
         config = {
             "apiKey": "AIzaSyBdeH9uelVdA54VNtFNtTiNXpWpI-qnVxw",
