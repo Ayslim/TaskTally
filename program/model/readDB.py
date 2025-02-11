@@ -1,9 +1,9 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__),'..','..')))
-import pyrebase
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+import pyrebase4
 
-class writeDB:
+class ReadDB:
     def __init__(self):
         config = {
             "apiKey": "AIzaSyBdeH9uelVdA54VNtFNtTiNXpWpI-qnVxw",
@@ -14,6 +14,6 @@ class writeDB:
             "messagingSenderId": "892299139303",
             "appId": "1:892299139303:web:36373d6a48011b39536a42",
             "measurementId": "G-7GEWMKQSF2"
-            }
-        firebase = pyrebase.initialize_app(config)
+        }
+        firebase = pyrebase4.initialize_app(config)
         self.database = firebase.database()
