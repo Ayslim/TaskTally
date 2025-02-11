@@ -17,3 +17,10 @@ class readDB:
             }
         firebase = pyrebase.initialize_app(config)
         self.database = firebase.database()
+        
+    def read_test(self):
+        task_list = self.database.child("tasks").get()
+        
+        for task in task_list:
+            print(task)
+        
