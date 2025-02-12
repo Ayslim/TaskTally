@@ -1,9 +1,9 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__),'..','..')))
-import pyrebase
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+import pyrebase4
 
-class writeDB:
+class ReadDB:
     def __init__(self):
         config = {
             "apiKey": "AIzaSyBdeH9uelVdA54VNtFNtTiNXpWpI-qnVxw",
@@ -17,3 +17,10 @@ class writeDB:
             }
         firebase = pyrebase.initialize_app(config)
         self.database = firebase.database()
+        
+    def read_test(self):
+        task_list = self.database.child("tasks").get()
+        
+        for task in task_list:
+            print(task)
+        
