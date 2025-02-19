@@ -13,6 +13,7 @@ import sys
 from taskPage import Ui_TaskPage 
 from info import Ui_InfoPage
 from self_care_tips import Ui_SelfCarePage
+from statistics import Ui_MainWindow as Ui_StatsPage
 
 
 class Ui_MainWindow(object):
@@ -66,6 +67,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.connectSignals()  # Connect button clicks
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -88,22 +90,30 @@ class Ui_MainWindow(object):
     def openInfoPage(self):
         """Opens the Info page."""
         self.infoPage = QtWidgets.QMainWindow()
-        self.ui_infoPage = Ui_InfoPage()  # Updated class reference
+        self.ui_infoPage = Ui_InfoPage()
         self.ui_infoPage.setupUi(self.infoPage)
         self.infoPage.show()
 
     def openSelfCarePage(self):
         """Opens the Self Care Tips page."""
         self.selfCarePage = QtWidgets.QMainWindow()
-        self.ui_selfCarePage = Ui_SelfCarePage()  # Updated class reference
+        self.ui_selfCarePage = Ui_SelfCarePage()
         self.ui_selfCarePage.setupUi(self.selfCarePage)
         self.selfCarePage.show()
+
+    def openStatsPage(self):
+        """Opens the Statistics page."""
+        self.statsPage = QtWidgets.QMainWindow()
+        self.ui_statsPage = Ui_StatsPage()  # Open Stats Page
+        self.ui_statsPage.setupUi(self.statsPage)
+        self.statsPage.show()
 
     def connectSignals(self):
         """Connects button clicks to functions."""
         self.openTasksButton.clicked.connect(self.openTaskPage)
         self.openInfoButton.clicked.connect(self.openInfoPage)
-        self.openSelfCareButton.clicked.connect(self.openSelfCarePage)  # Connected self-care button
+        self.openSelfCareButton.clicked.connect(self.openSelfCarePage)
+        self.openStatsButton.clicked.connect(self.openStatsPage)  # Connect Stats Button
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
