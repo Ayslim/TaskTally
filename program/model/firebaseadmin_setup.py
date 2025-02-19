@@ -3,7 +3,7 @@ from firebase_admin import db, credentials
 
 # authenticate to firebase
 cred = credentials.Certificate("credentials.json")
-firebase_admin.initialize_app(cred, { "databaseURL": "https://tasktally-d09dd-default-rtdb.europe-west1.firebasedatabase.app"})
+firebase_admin.initialize_app(cred, { "databaseURL": "https://tasktally-d09dd-default-rtdb.europe-west1.firebasedatabase.app"}) # noqa
 
 # creating reference to root node 
 ref = db.reference("/")
