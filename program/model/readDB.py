@@ -14,6 +14,13 @@ class ReadDB:
             "messagingSenderId": "892299139303",
             "appId": "1:892299139303:web:36373d6a48011b39536a42",
             "measurementId": "G-7GEWMKQSF2"
-        }
-        firebase = pyrebase4.initialize_app(config)
+            }
+        firebase = pyrebase.initialize_app(config)
         self.database = firebase.database()
+        
+"""     def read_test(self):
+        task_list = self.database.child("tasks").get()
+        
+        for task in task_list:
+            print(task) """
+        
