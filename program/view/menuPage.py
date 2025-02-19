@@ -10,9 +10,9 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
-from taskPage import Ui_TaskPage  # Assuming this is the task page class
-from info import Ui_background
-from self_care_tips import Ui_background
+from taskPage import Ui_TaskPage 
+from info import Ui_InfoPage
+from self_care_tips import Ui_SelfCarePage
 
 
 class Ui_MainWindow(object):
@@ -21,48 +21,46 @@ class Ui_MainWindow(object):
         MainWindow.resize(1440, 900)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        
+
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(560, 360, 301, 111))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
-        
+
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.gridLayout.setObjectName("gridLayout")
-        
+
         self.openStatsButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openStatsButton.setObjectName("openStatsButton")
         self.gridLayout.addWidget(self.openStatsButton, 1, 0, 1, 1)
-        
+
         self.openSelfCareButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openSelfCareButton.setObjectName("openSelfCareButton")
         self.gridLayout.addWidget(self.openSelfCareButton, 0, 0, 1, 1)
-        
+
         self.openTasksButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openTasksButton.setObjectName("openTasksButton")
         self.gridLayout.addWidget(self.openTasksButton, 0, 1, 1, 1)
-        
+
         self.openInfoButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openInfoButton.setObjectName("openInfoButton")
         self.gridLayout.addWidget(self.openInfoButton, 1, 1, 1, 1)
-        
+
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(680, 280, 61, 41))
-        self.label.setObjectName("label")  # "TaskTally" label
-        
+        self.label.setObjectName("label")
+
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(690, 530, 60, 16))
-        self.label_2.setObjectName("label_2")  # "Points: 0" label
-        
+        self.label_2.setObjectName("label_2")
+
         MainWindow.setCentralWidget(self.centralwidget)
-        
-        # Menu bar
+
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1440, 24))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
-        
-        # Status bar
+
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
@@ -81,30 +79,37 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Points: 0"))
 
     def openTaskPage(self):
-        """Function to open the task page when the button is clicked."""
+        """Opens the task page."""
         self.taskPage = QtWidgets.QMainWindow()
-        self.ui_taskPage = Ui_TaskPage()  # Instantiate the task page class
+        self.ui_taskPage = Ui_TaskPage()
         self.ui_taskPage.setupUi(self.taskPage)
         self.taskPage.show()
 
     def openInfoPage(self):
-        """Function to open the info page when the button is clicked."""
+        """Opens the Info page."""
         self.infoPage = QtWidgets.QMainWindow()
-        self.ui_infoPage = Ui_background()  # Instantiate the Info page class
+        self.ui_infoPage = Ui_InfoPage()  # Updated class reference
         self.ui_infoPage.setupUi(self.infoPage)
         self.infoPage.show()
 
+    def openSelfCarePage(self):
+        """Opens the Self Care Tips page."""
+        self.selfCarePage = QtWidgets.QMainWindow()
+        self.ui_selfCarePage = Ui_SelfCarePage()  # Updated class reference
+        self.ui_selfCarePage.setupUi(self.selfCarePage)
+        self.selfCarePage.show()
+
     def connectSignals(self):
-        """Connect all signals (button clicks) to appropriate functions."""
-        self.openTasksButton.clicked.connect(self.openTaskPage)  # Open task page when button is clicked
+        """Connects button clicks to functions."""
+        self.openTasksButton.clicked.connect(self.openTaskPage)
         self.openInfoButton.clicked.connect(self.openInfoPage)
-    
+        self.openSelfCareButton.clicked.connect(self.openSelfCarePage)  # Connected self-care button
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-    ui.connectSignals()  # Connect signals after the UI setup
+    ui.connectSignals()  # Connect signals after setup
     MainWindow.show()
     sys.exit(app.exec_())

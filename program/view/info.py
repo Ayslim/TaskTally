@@ -10,7 +10,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets # noqa
 
 
-class Ui_background(object):
+class Ui_InfoPage(object):
     def setupUi(self, background):
         background.setObjectName("background")
         background.resize(1440, 900)
@@ -93,7 +93,7 @@ if __name__ == "__main__":
 
     app = QtWidgets.QApplication(sys.argv)
     background = QtWidgets.QWidget()
-    ui = Ui_background()
+    ui = Ui_InfoPage()
     ui.setupUi(background)
     background.show()
     sys.exit(app.exec_())
