@@ -17,19 +17,21 @@ from statistics import Ui_MainWindow as Ui_StatsPage  # Import Stats Page
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
+        # Setup main window properties
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1440, 900)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
 
+        # Create grid layout for buttons
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(560, 360, 301, 111))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
-
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.gridLayout.setObjectName("gridLayout")
 
+        # Create buttons for each page
         self.openStatsButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openStatsButton.setObjectName("openStatsButton")
         self.gridLayout.addWidget(self.openStatsButton, 1, 0, 1, 1)
@@ -46,6 +48,7 @@ class Ui_MainWindow(object):
         self.openInfoButton.setObjectName("openInfoButton")
         self.gridLayout.addWidget(self.openInfoButton, 1, 1, 1, 1)
 
+        # Add labels to the central widget
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(680, 280, 61, 41))
         self.label.setObjectName("label")
@@ -54,8 +57,10 @@ class Ui_MainWindow(object):
         self.label_2.setGeometry(QtCore.QRect(690, 530, 60, 16))
         self.label_2.setObjectName("label_2")
 
+        # Set the central widget for the MainWindow
         MainWindow.setCentralWidget(self.centralwidget)
 
+        # Create menu bar and status bar
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1440, 24))
         self.menubar.setObjectName("menubar")
@@ -65,11 +70,17 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
+        # Retranslate UI to set text for elements
         self.retranslateUi(MainWindow)
-        self.connectSignals()  # Connect button clicks
+
+        # Connect buttons to their respective functions
+        self.connectSignals()
+
+        # Connect slots for UI components
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
+        """Set the text for UI elements."""
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.openStatsButton.setText(_translate("MainWindow", "Statistics"))
