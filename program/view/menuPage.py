@@ -10,11 +10,10 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
-from taskPage import Ui_TaskPage 
+from taskPage import Ui_TaskPage
 from info import Ui_InfoPage
 from self_care_tips import Ui_SelfCarePage
-from statistics import Ui_MainWindow as Ui_StatsPage
-
+from statistics import Ui_MainWindow as Ui_StatsPage  # Import Stats Page
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -120,6 +119,5 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-    ui.connectSignals()  # Connect signals after setup
     MainWindow.show()
     sys.exit(app.exec_())
