@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets # noqa
 
 
-class Ui_background(object):
+class Ui_SelfCarePage(object):
     def setupUi(self, background):
         background.setObjectName("background")
         background.resize(690, 653)
@@ -199,7 +199,7 @@ if __name__ == "__main__":
 
     app = QtWidgets.QApplication(sys.argv)
     background = QtWidgets.QWidget()
-    ui = Ui_background()
+    ui = Ui_SelfCarePage() #here
     ui.setupUi(background)
     background.show()
     sys.exit(app.exec_())
