@@ -15,7 +15,7 @@ import pickle
 class Ui_TaskPage(object):
     def setupUi(self, TaskPage):
         TaskPage.setObjectName("TaskPage")
-        TaskPage.resize(800, 600)
+        TaskPage.resize(1440, 900)
 
         # Create a central widget for the task page
         self.centralwidget = QtWidgets.QWidget(TaskPage)
@@ -23,29 +23,107 @@ class Ui_TaskPage(object):
         
         # Points label to display the user's score
         self.pointsLabel = QtWidgets.QLabel(self.centralwidget)
-        self.pointsLabel.setGeometry(QtCore.QRect(920, 110, 60, 16))
+        self.pointsLabel.setGeometry(QtCore.QRect(1000, 280, 250, 100))
         self.pointsLabel.setObjectName("pointsLabel")
+        self.pointsLabel.setText("Points: 0")
+        self.pointsLabel.setStyleSheet(
+            "QLabel {"
+            "    font-size: 30pt;"
+            "    color: black;"
+            "    border: 2px solid black;"
+            "    border-radius: 5px;"
+            "    padding: 10px;"
+            "}"
+        )
         
         # Label for the "To-Do" list heading
         self.toDoLabel = QtWidgets.QLabel(self.centralwidget)
-        self.toDoLabel.setGeometry(QtCore.QRect(660, 90, 81, 31))
+        self.toDoLabel.setGeometry(QtCore.QRect(440, 80, 551, 81))
         self.toDoLabel.setObjectName("toDoLabel")
+        self.toDoLabel.setText("To-Do List")
+        self.toDoLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.toDoLabel.setStyleSheet(
+            "QLabel {"
+            "    font-size: 48pt;"
+            "    font-style: italic;"
+            "    font-weight: bold;"
+            "    color: black;"
+            "    border: 2px solid black;"
+            "    border-radius: 5px;"
+            "    padding: 10px;"
+            "}"
+        )
         
         # Reset button that clears tasks and resets points
         self.resetButton = QtWidgets.QPushButton(self.centralwidget)
-        self.resetButton.setGeometry(QtCore.QRect(850, 620, 131, 31))
+        self.resetButton.setGeometry(QtCore.QRect(1000, 500, 150, 50))
         self.resetButton.setObjectName("resetButton")
+        self.resetButton.setText("Reset Everything")
+        self.resetButton.setStyleSheet(
+            "QPushButton {\n"
+            "    color: black;\n"
+            "    border: 2px solid black;\n"
+            "    border-radius: 5px;\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #d3d3d3;\n"
+            "}\n"
+            ""
+        )
         
         # Save button that stores progress to a file
         self.saveButton = QtWidgets.QPushButton(self.centralwidget)
-        self.saveButton.setGeometry(QtCore.QRect(850, 590, 131, 31))
+        self.saveButton.setGeometry(QtCore.QRect(1000, 600, 150, 50))
         self.saveButton.setObjectName("saveButton")
+        self.saveButton.setText("Save Progress")
+        self.saveButton.setStyleSheet(
+            "QPushButton {\n"
+            "    color: black;\n"
+            "    border: 2px solid black;\n"
+            "    border-radius: 5px;\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #d3d3d3;\n"
+            "}\n"
+            ""
+        )
         
         # Task list view using QListWidget with checkboxes for each task
         self.taskList = QtWidgets.QListWidget(self.centralwidget)
-        self.taskList.setGeometry(QtCore.QRect(440, 150, 551, 411))
+        self.taskList.setGeometry(QtCore.QRect(200, 200, 700, 500))
         self.taskList.setObjectName("taskList")
         self.taskList.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)  # Enable multiple selection (checkboxes)
+        self.taskList.setStyleSheet(
+            "QListWidget {\n"
+            "   font-size: 20pt;\n"
+            "   border: 2px solid black;\n"
+            "   border-radius: 5px;\n"
+            "   background-color: #ECECEC;\n"
+            "   border-radius: 5px;\n"
+            "}\n"
+            "\n"
+        )
+
+        # menu button
+        self.btn_menu = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_menu.setGeometry(QtCore.QRect(40, 40, 151, 41))
+        self.btn_menu.setObjectName("btn_menu")
+        self.btn_menu.setText("Back to menu")
+        self.btn_menu.setStyleSheet(
+            "QPushButton {\n"
+            "    color: black;\n"
+            "    border: 2px solid black;\n"
+            "    border-radius: 5px;\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #d3d3d3;\n"
+            "}\n"
+            ""
+        )
+        self.btn_menu.clicked.connect(TaskPage.close)
         
         # Predefined tasks to be displayed in the task list
         premade_tasks = [
@@ -77,20 +155,7 @@ class Ui_TaskPage(object):
         # Status bar (for displaying messages)
         self.statusbar = QtWidgets.QStatusBar(TaskPage)
         self.statusbar.setObjectName("statusbar")
-        TaskPage.setStatusBar(self.statusbar)
-
-        # Set the window title and labels using retranslateUi method
-        self.retranslateUi(TaskPage)
-        QtCore.QMetaObject.connectSlotsByName(TaskPage)
-
-    def retranslateUi(self, TaskPage):
-        """Set the window title and text for labels and buttons."""
-        _translate = QtCore.QCoreApplication.translate
-        TaskPage.setWindowTitle(_translate("TaskPage", "Task Page"))
-        self.pointsLabel.setText(_translate("TaskPage", "Points: 0"))
-        self.toDoLabel.setText(_translate("TaskPage", "TO-DO LIST"))
-        self.resetButton.setText(_translate("TaskPage", "Reset Everything"))
-        self.saveButton.setText(_translate("TaskPage", "Save Progress"))
+        TaskPage.setStatusBar(self.statusbar)     
 
     def saveProgress(self):
         """Save the progress (task states and points) to a file using pickle."""

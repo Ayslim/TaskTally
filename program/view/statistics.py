@@ -13,72 +13,78 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1440, 872)  # Set window size
+        MainWindow.resize(1440, 900)  # Set window size
+
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
 
         # Table Widget for displaying task statistics
         self.tbl_stats = QtWidgets.QTableWidget(self.centralwidget)
-        self.tbl_stats.setGeometry(QtCore.QRect(160, 180, 501, 431))
+        self.tbl_stats.setGeometry(QtCore.QRect(130, 240, 1200, 430))
         self.tbl_stats.setObjectName("tbl_stats")
         self.tbl_stats.setColumnCount(4)  # Define 4 columns
         self.tbl_stats.setRowCount(0)  # No rows initially
         self.tbl_stats.setHorizontalHeaderItem(0, QtWidgets.QTableWidgetItem("Task Name"))
-        self.tbl_stats.setHorizontalHeaderItem(1, QtWidgets.QTableWidgetItem("Task Completed"))
+        self.tbl_stats.setHorizontalHeaderItem(1, QtWidgets.QTableWidgetItem("Points"))
         self.tbl_stats.setHorizontalHeaderItem(2, QtWidgets.QTableWidgetItem("Date"))
-        self.tbl_stats.setHorizontalHeaderItem(3, QtWidgets.QTableWidgetItem("Streak"))
+        self.tbl_stats.setHorizontalHeaderItem(3, QtWidgets.QTableWidgetItem("Total points collected"))
+        self.tbl_stats.setColumnWidth(0, 299)
+        self.tbl_stats.setColumnWidth(1, 299)
+        self.tbl_stats.setColumnWidth(2, 299)
+        self.tbl_stats.setColumnWidth(3, 299)
+        self.tbl_stats.setStyleSheet("""
+            QTableWidget {
+                border: 2px solid black;
+                background-color: #ECECEC;
+                border-radius: 5px;
+            }
+            
+            QHeaderView::section {
+                background-color: #d3d3d3;
+                font-size: 14pt; 
+                font-weight: bold;
+                color: black;
+                padding: 5px;
+            }
+        """)
 
-        # Progress Bar to show overall progress
-        self.prg_points = QtWidgets.QProgressBar(self.centralwidget)
-        self.prg_points.setGeometry(QtCore.QRect(880, 150, 321, 81))
-        self.prg_points.setProperty("value", 24)  # Set initial progress value
-        self.prg_points.setObjectName("prg_points")
 
-        # List Widget for displaying weekly statistics
-        self.lst_weeklyStats = QtWidgets.QListWidget(self.centralwidget)
-        self.lst_weeklyStats.setGeometry(QtCore.QRect(890, 340, 291, 251))
-        self.lst_weeklyStats.setObjectName("lst_weeklyStats")
+        # Buttons for closing the page
+        self.btn_menu = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_menu.setGeometry(QtCore.QRect(40, 40, 151, 41))
+        self.btn_menu.setObjectName("btn_menu")
+        self.btn_menu.setText("Back to menu")
+        self.btn_menu.setStyleSheet(
+            "QPushButton {\n"
+            "    color: black;\n"
+            "    border: 2px solid black;\n"
+            "    border-radius: 5px;\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #d3d3d3;\n"
+            "}\n"
+            ""
+        )
+        self.btn_menu.clicked.connect(MainWindow.close)  # Close window on click
 
-        # Placeholder data for weekly stats 
-        weekly_stats = [
-            "Monday: 50 points",
-            "Tuesday: 40 points",
-            "Wednesday: 60 points",
-            "Thursday: 30 points",
-            "Friday: 70 points",
-            "Saturday: 80 points",
-            "Sunday: 0 points"
-        ]
-        self.lst_weeklyStats.addItems(weekly_stats)  # Add items to the weekly stats list
-
-        # Buttons for closing the page and resetting progress
-        self.btn_close = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_close.setGeometry(QtCore.QRect(950, 710, 121, 31))
-        self.btn_close.setObjectName("btn_close")
-        self.btn_close.setText("Close Page")
-        self.btn_close.clicked.connect(MainWindow.close)  # Close window on click
-
-        self.btn_resetStats = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_resetStats.setGeometry(QtCore.QRect(1080, 710, 121, 31))
-        self.btn_resetStats.setObjectName("btn_resetStats")
-        self.btn_resetStats.setText("Reset Progress")
-        self.btn_resetStats.clicked.connect(self.reset_stats)  # Connect reset function to button
-
-        # Labels for different sections of the page
+        # Main page label 
         self.lbl_title = QtWidgets.QLabel(self.centralwidget)
-        self.lbl_title.setGeometry(QtCore.QRect(700, 70, 150, 31))
+        self.lbl_title.setGeometry(QtCore.QRect(440, 80, 551, 81))
         self.lbl_title.setObjectName("lbl_title")
-        self.lbl_title.setText("Statistics")  # Title label
-
-        self.lbl_overview = QtWidgets.QLabel(self.centralwidget)
-        self.lbl_overview.setGeometry(QtCore.QRect(990, 200, 150, 31))
-        self.lbl_overview.setObjectName("lbl_overview")
-        self.lbl_overview.setText("Overall Progress")  # Overview label
-
-        self.lbl_weekly_stats = QtWidgets.QLabel(self.centralwidget)
-        self.lbl_weekly_stats.setGeometry(QtCore.QRect(990, 300, 150, 31))
-        self.lbl_weekly_stats.setObjectName("lbl_weekly_stats")
-        self.lbl_weekly_stats.setText("Weekly Tracker")  # Weekly stats label
+        self.lbl_title.setText("Statistics")
+        self.lbl_title.setAlignment(QtCore.Qt.AlignCenter)
+        self.lbl_title.setStyleSheet(
+            "QLabel {"
+            "    font-size: 48pt;"
+            "    font-style: italic;"
+            "    font-weight: bold;"
+            "    color: black;"
+            "    border: 2px solid black;"
+            "    border-radius: 5px;"
+            "    padding: 10px;"
+            "}"
+        )
 
         # Set the main layout, menu bar, and status bar
         MainWindow.setCentralWidget(self.centralwidget)
@@ -89,12 +95,6 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-
-    def reset_stats(self):
-        """ Clears all statistics when the 'Reset Progress' button is clicked. """
-        self.tbl_stats.setRowCount(0)  # Clear all rows in the statistics table
-        self.prg_points.setValue(0)  # Reset progress bar to 0
-        self.lst_weeklyStats.clear()  # Clear the weekly stats list
 
 if __name__ == "__main__":
     import sys

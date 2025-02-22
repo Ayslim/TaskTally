@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
 
         # Create grid layout for buttons
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(560, 360, 301, 111))
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(500, 360, 450, 200))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
@@ -34,28 +34,29 @@ class Ui_MainWindow(object):
         # Create buttons for each page
         self.openStatsButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openStatsButton.setObjectName("openStatsButton")
+        self.styleButton(self.openStatsButton)
         self.gridLayout.addWidget(self.openStatsButton, 1, 0, 1, 1)
 
         self.openSelfCareButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openSelfCareButton.setObjectName("openSelfCareButton")
+        self.styleButton(self.openSelfCareButton)
         self.gridLayout.addWidget(self.openSelfCareButton, 0, 0, 1, 1)
 
         self.openTasksButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openTasksButton.setObjectName("openTasksButton")
+        self.styleButton(self.openTasksButton)
         self.gridLayout.addWidget(self.openTasksButton, 0, 1, 1, 1)
 
         self.openInfoButton = QtWidgets.QPushButton(self.gridLayoutWidget)
         self.openInfoButton.setObjectName("openInfoButton")
+        self.styleButton(self.openInfoButton)
         self.gridLayout.addWidget(self.openInfoButton, 1, 1, 1, 1)
 
         # Add labels to the central widget
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(680, 280, 61, 41))
+        self.label.setGeometry(QtCore.QRect(560, 200, 350, 100))
         self.label.setObjectName("label")
-
-        self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(690, 530, 60, 16))
-        self.label_2.setObjectName("label_2")
+        self.styleLabel(self.label)
 
         # Set the central widget for the MainWindow
         MainWindow.setCentralWidget(self.centralwidget)
@@ -88,8 +89,8 @@ class Ui_MainWindow(object):
         self.openTasksButton.setText(_translate("MainWindow", "To-Do List"))
         self.openInfoButton.setText(_translate("MainWindow", "Info Page"))
         self.label.setText(_translate("MainWindow", "TaskTally"))
-        self.label_2.setText(_translate("MainWindow", "Points: 0"))
 
+    # Opens the task page
     def openTaskPage(self):
         """Opens the task page."""
         self.taskPage = QtWidgets.QMainWindow()
@@ -97,6 +98,7 @@ class Ui_MainWindow(object):
         self.ui_taskPage.setupUi(self.taskPage)
         self.taskPage.show()
 
+    # Opens the info page
     def openInfoPage(self):
         """Opens the Info page."""
         self.infoPage = QtWidgets.QMainWindow()
@@ -104,17 +106,19 @@ class Ui_MainWindow(object):
         self.ui_infoPage.setupUi(self.infoPage)
         self.infoPage.show()
 
+    # Opens the selfcare page
     def openSelfCarePage(self):
         """Opens the Self Care Tips page."""
         self.selfCarePage = QtWidgets.QMainWindow()
         self.ui_selfCarePage = Ui_SelfCarePage()
         self.ui_selfCarePage.setupUi(self.selfCarePage)
         self.selfCarePage.show()
-
+    
+    # Opens the statistics page
     def openStatsPage(self):
         """Opens the Statistics page."""
         self.statsPage = QtWidgets.QMainWindow()
-        self.ui_statsPage = Ui_StatsPage()  # Open Stats Page
+        self.ui_statsPage = Ui_StatsPage()
         self.ui_statsPage.setupUi(self.statsPage)
         self.statsPage.show()
 
@@ -123,7 +127,37 @@ class Ui_MainWindow(object):
         self.openTasksButton.clicked.connect(self.openTaskPage)
         self.openInfoButton.clicked.connect(self.openInfoPage)
         self.openSelfCareButton.clicked.connect(self.openSelfCarePage)
-        self.openStatsButton.clicked.connect(self.openStatsPage)  # Connect Stats Button
+        self.openStatsButton.clicked.connect(self.openStatsPage)
+    
+    def styleButton(self, button):
+        """Styles the buttons with size, font, and border."""
+        button.setMinimumSize(200, 60)
+        button.setStyleSheet(
+            "QPushButton {"
+            "    font-size: 18pt;"
+            "    font-weight: bold;"
+            "    color: black;"
+            "    border: 3px solid black;"
+            "    border-radius: 10px;"
+            "}"
+            "QPushButton:hover {"
+            "    background-color: #d3d3d3;"
+            "}"
+        )
+
+    def styleLabel(self, label):
+        """Styles the 'TaskTally' label."""
+        label.setAlignment(QtCore.Qt.AlignCenter)
+        label.setStyleSheet(
+            "QLabel {"
+            "    font-size: 36pt;"
+            "    font-weight: bold;"
+            "    color: black;"
+            "    border: 3px solid black;"
+            "    border-radius: 15px;"
+            "    padding: 15px;"
+            "}"
+        )
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
