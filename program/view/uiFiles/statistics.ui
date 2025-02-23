@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>220</y>
+     <y>150</y>
      <width>511</width>
      <height>201</height>
     </rect>
@@ -43,14 +43,34 @@
     </property>
    </column>
   </widget>
-  <widget class="QLabel" name="lbl_title">
+  <widget class="QPushButton" name="previousPageBtn_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>390</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>180</y>
-     <width>61</width>
-     <height>31</height>
+     <y>30</y>
+     <width>421</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Statistics</string>
