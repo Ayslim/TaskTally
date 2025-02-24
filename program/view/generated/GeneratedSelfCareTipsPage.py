@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\program\view\uiFiles\selfCareTips.ui'
+# Form implementation generated from reading ui file './program/view/uiFiles/selfCareTips.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -14,38 +14,23 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(600, 600)
+        Form.resize(1440, 789)
         self.stackedWidget = QtWidgets.QStackedWidget(Form)
-        self.stackedWidget.setGeometry(QtCore.QRect(0, 49, 600, 431))
+        self.stackedWidget.setGeometry(QtCore.QRect(190, 170, 1071, 461))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
+        self.stackedWidget.setFont(font)
+        self.stackedWidget.setStyleSheet("QStackedWidget {\n"
+"               border: 2px solid black;\n"
+"               border-radius: 10px;\n"
+"            }")
         self.stackedWidget.setObjectName("stackedWidget")
-        self.page = QtWidgets.QWidget()
-        self.page.setObjectName("page")
-        self.tip1title = QtWidgets.QLabel(self.page)
-        self.tip1title.setGeometry(QtCore.QRect(20, 30, 531, 71))
-        font = QtGui.QFont()
-        font.setBold(True)
-        font.setWeight(75)
-        self.tip1title.setFont(font)
-        self.tip1title.setObjectName("tip1title")
-        self.tip1label = QtWidgets.QLabel(self.page)
-        self.tip1label.setGeometry(QtCore.QRect(20, 150, 531, 131))
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        self.tip1label.setFont(font)
-        self.tip1label.setWordWrap(True)
-        self.tip1label.setObjectName("tip1label")
-        self.stackedWidget.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
-        self.tip2title = QtWidgets.QLabel(self.page_2)
-        self.tip2title.setGeometry(QtCore.QRect(20, 30, 531, 71))
-        font = QtGui.QFont()
-        font.setBold(True)
-        font.setWeight(75)
-        self.tip2title.setFont(font)
-        self.tip2title.setObjectName("tip2title")
         self.tip2label = QtWidgets.QLabel(self.page_2)
-        self.tip2label.setGeometry(QtCore.QRect(20, 150, 531, 131))
+        self.tip2label.setGeometry(QtCore.QRect(40, 40, 970, 380))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.tip2label.setFont(font)
@@ -55,52 +40,173 @@ class Ui_Form(object):
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
         self.tip3label = QtWidgets.QLabel(self.page_3)
-        self.tip3label.setGeometry(QtCore.QRect(20, 150, 531, 131))
+        self.tip3label.setGeometry(QtCore.QRect(40, 40, 970, 380))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.tip3label.setFont(font)
         self.tip3label.setWordWrap(True)
         self.tip3label.setObjectName("tip3label")
-        self.tip3title = QtWidgets.QLabel(self.page_3)
-        self.tip3title.setGeometry(QtCore.QRect(20, 30, 531, 71))
-        font = QtGui.QFont()
-        font.setBold(True)
-        font.setWeight(75)
-        self.tip3title.setFont(font)
-        self.tip3title.setObjectName("tip3title")
         self.stackedWidget.addWidget(self.page_3)
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setObjectName("page_4")
+        self.label = QtWidgets.QLabel(self.page_4)
+        self.label.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label.setObjectName("label")
+        self.stackedWidget.addWidget(self.page_4)
+        self.page_5 = QtWidgets.QWidget()
+        self.page_5.setObjectName("page_5")
+        self.label_3 = QtWidgets.QLabel(self.page_5)
+        self.label_3.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_3.setObjectName("label_3")
+        self.stackedWidget.addWidget(self.page_5)
+        self.page_6 = QtWidgets.QWidget()
+        self.page_6.setObjectName("page_6")
+        self.label_4 = QtWidgets.QLabel(self.page_6)
+        self.label_4.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_4.setObjectName("label_4")
+        self.stackedWidget.addWidget(self.page_6)
+        self.page_7 = QtWidgets.QWidget()
+        self.page_7.setObjectName("page_7")
+        self.label_5 = QtWidgets.QLabel(self.page_7)
+        self.label_5.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_5.setObjectName("label_5")
+        self.stackedWidget.addWidget(self.page_7)
+        self.page_8 = QtWidgets.QWidget()
+        self.page_8.setObjectName("page_8")
+        self.label_6 = QtWidgets.QLabel(self.page_8)
+        self.label_6.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_6.setObjectName("label_6")
+        self.stackedWidget.addWidget(self.page_8)
+        self.page_9 = QtWidgets.QWidget()
+        self.page_9.setObjectName("page_9")
+        self.label_7 = QtWidgets.QLabel(self.page_9)
+        self.label_7.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_7.setObjectName("label_7")
+        self.stackedWidget.addWidget(self.page_9)
+        self.page_10 = QtWidgets.QWidget()
+        self.page_10.setObjectName("page_10")
+        self.label_8 = QtWidgets.QLabel(self.page_10)
+        self.label_8.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_8.setObjectName("label_8")
+        self.stackedWidget.addWidget(self.page_10)
+        self.page_11 = QtWidgets.QWidget()
+        self.page_11.setObjectName("page_11")
+        self.label_9 = QtWidgets.QLabel(self.page_11)
+        self.label_9.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_9.setObjectName("label_9")
+        self.stackedWidget.addWidget(self.page_11)
+        self.page_12 = QtWidgets.QWidget()
+        self.page_12.setObjectName("page_12")
+        self.label_10 = QtWidgets.QLabel(self.page_12)
+        self.label_10.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_10.setObjectName("label_10")
+        self.stackedWidget.addWidget(self.page_12)
+        self.page_13 = QtWidgets.QWidget()
+        self.page_13.setObjectName("page_13")
+        self.label_11 = QtWidgets.QLabel(self.page_13)
+        self.label_11.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_11.setObjectName("label_11")
+        self.stackedWidget.addWidget(self.page_13)
+        self.page_15 = QtWidgets.QWidget()
+        self.page_15.setObjectName("page_15")
+        self.label_13 = QtWidgets.QLabel(self.page_15)
+        self.label_13.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_13.setObjectName("label_13")
+        self.stackedWidget.addWidget(self.page_15)
+        self.page_14 = QtWidgets.QWidget()
+        self.page_14.setObjectName("page_14")
+        self.label_12 = QtWidgets.QLabel(self.page_14)
+        self.label_12.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_12.setObjectName("label_12")
+        self.stackedWidget.addWidget(self.page_14)
+        self.page = QtWidgets.QWidget()
+        self.page.setObjectName("page")
+        self.tip1label = QtWidgets.QLabel(self.page)
+        self.tip1label.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.tip1label.setFont(font)
+        self.tip1label.setWordWrap(True)
+        self.tip1label.setObjectName("tip1label")
+        self.stackedWidget.addWidget(self.page)
         self.nextPageBtn = QtWidgets.QPushButton(Form)
-        self.nextPageBtn.setGeometry(QtCore.QRect(500, 560, 93, 28))
+        self.nextPageBtn.setGeometry(QtCore.QRect(190, 660, 93, 28))
+        self.nextPageBtn.setStyleSheet("QPushButton {\n"
+"                color: black;\n"
+"              border: 2px solid black;\n"
+"              border-radius: 5px;\n"
+"            }\n"
+"           QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }\n"
+"            ")
         self.nextPageBtn.setObjectName("nextPageBtn")
         self.previousPageBtn = QtWidgets.QPushButton(Form)
-        self.previousPageBtn.setGeometry(QtCore.QRect(400, 560, 93, 28))
+        self.previousPageBtn.setGeometry(QtCore.QRect(1170, 660, 93, 28))
+        self.previousPageBtn.setStyleSheet("QPushButton {\n"
+"                color: black;\n"
+"              border: 2px solid black;\n"
+"              border-radius: 5px;\n"
+"            }\n"
+"           QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }\n"
+"            ")
         self.previousPageBtn.setObjectName("previousPageBtn")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(30, 10, 561, 41))
+        self.label_2.setGeometry(QtCore.QRect(420, 40, 561, 81))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setPointSize(-1)
         font.setBold(True)
+        font.setItalic(True)
         font.setWeight(75)
         self.label_2.setFont(font)
+        self.label_2.setStyleSheet("QLabel {\n"
+"                color: black;\n"
+"                   font-size: 48px;\n"
+"                font-style: italic;\n"
+"                font-weight: bold;\n"
+"                padding: 10px;\n"
+"                border-radius: 5px;\n"
+"                border: 2px solid black;\n"
+"            }")
         self.label_2.setObjectName("label_2")
-        self.previousPageBtn_2 = QtWidgets.QPushButton(Form)
-        self.previousPageBtn_2.setGeometry(QtCore.QRect(10, 560, 93, 28))
-        self.previousPageBtn_2.setObjectName("previousPageBtn_2")
+        self.close_btn = QtWidgets.QPushButton(Form)
+        self.close_btn.setGeometry(QtCore.QRect(30, 30, 90, 30))
+        self.close_btn.setStyleSheet("QPushButton {\n"
+"                color: black;\n"
+"              border: 2px solid black;\n"
+"              border-radius: 5px;\n"
+"            }\n"
+"           QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }\n"
+"            ")
+        self.close_btn.setObjectName("close_btn")
 
         self.retranslateUi(Form)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(8)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.tip1title.setText(_translate("Form", "Title"))
-        self.tip1label.setText(_translate("Form", "label"))
-        self.tip2title.setText(_translate("Form", "Title"))
-        self.tip2label.setText(_translate("Form", "label"))
-        self.tip3label.setText(_translate("Form", "label"))
-        self.tip3title.setText(_translate("Form", "Title"))
-        self.nextPageBtn.setText(_translate("Form", "Next"))
-        self.previousPageBtn.setText(_translate("Form", "Previous"))
-        self.label_2.setText(_translate("Form", "Self Care Tips"))
-        self.previousPageBtn_2.setText(_translate("Form", "Close"))
+        self.tip2label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:36pt; font-weight:600; color:#313131;\">&quot;You don’t have to be perfect, you just have to try.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">Reminder: Progress is more important than perfection. Even small efforts</span></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">count.</span></p></body></html>"))
+        self.tip3label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:36pt; font-weight:600; color:#313131;\">&quot;Your life is a reflection of the standards you set for yourself.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">Reminder: Set realistic but meaningful goals for your day. You deserve a life</span></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">that feels fulfilling.</span></p></body></html>"))
+        self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;Stop waiting for motivation. Discipline will take you </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">further.&quot;</span><br/><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Motivation comes and goes, but building small, consistent habits</span></p><p align=\"center\"><span style=\" font-size:24pt;\">can help you stay on track.</span></p></body></html>"))
+        self.label_3.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are not your past. You are not your mistakes. You are not what people</span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">say about you.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Let go of guilt or shame about unfinished tasks. Every day is a fresh start.</span></p></body></html>"))
+        self.label_4.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;Protect your energy like your life depends on it, </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">because it does.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Say no to things that drain you, and make time for activities that</span></p><p align=\"center\"><span style=\" font-size:24pt;\">recharge you.</span></p></body></html>"))
+        self.label_5.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are allowed to take up space. You are allowed to </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">exist unapologetically.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Don’t feel guilty for prioritizing your needs. Self-care isn’t</span></p><p align=\"center\"><span style=\" font-size:24pt;\">selfish—it’s necessary.</span></p></body></html>"))
+        self.label_6.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;The way you speak to yourself matters. Be kind to </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">yourself.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Replace negative self-talk with encouragement. Instead of “I can’t</span></p><p align=\"center\"><span style=\" font-size:24pt;\">do this,” try “I’ll do my best.”</span></p></body></html>"))
+        self.label_7.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are the CEO of your life. Take responsibility for it.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: You have the power to plan your day and make choices that serve</span></p><p align=\"center\"><span style=\" font-size:24pt;\">you. Take charge, one step at a time.</span></p></body></html>"))
+        self.label_8.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;Stop overthinking and start doing. Action will always </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">beat fear.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Overwhelmed by a task? Just start. Taking the first step is often the</span></p><p align=\"center\"><span style=\" font-size:24pt;\">hardest part.</span></p></body></html>"))
+        self.label_9.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are not stuck. You are just scared to move </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">forward.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: If planning feels overwhelming, break it down. Small steps will help</span></p><p align=\"center\"><span style=\" font-size:24pt;\">you move past fear.</span></p></body></html>"))
+        self.label_10.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;Your vibe attracts your tribe. Surround yourself with </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">people who uplift you.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Share your goals with supportive people who encourage and</span></p><p align=\"center\"><span style=\" font-size:24pt;\">motivate you.</span></p></body></html>"))
+        self.label_11.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are not lazy. You are just uninspired.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: If you’re struggling to find energy, try something new or reconnect</span></p><p align=\"center\"><span style=\" font-size:24pt;\">with your “why.</span></p></body></html>"))
+        self.label_13.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are capable of more than you think. Believe </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">in yourself.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Even on tough days, trust that you have the strength to get through</span></p><p align=\"center\"><span style=\" font-size:24pt;\">it.</span></p></body></html>"))
+        self.label_12.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are not here to shrink yourself for the comfort</span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">of others.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Don’t let guilt or others’ expectations dictate your day. Focus on</span></p><p align=\"center\"><span style=\" font-size:24pt;\">what truly matters to you.</span></p></body></html>"))
+        self.tip1label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:36pt; font-weight:600; color:#313131;\">&quot;You are the prize. Stop acting like you’re the option.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">Reminder: Your time and energy are valuable. Prioritize tasks and people that</span></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">align with your goals and well-being.</span></p></body></html>"))
+        self.nextPageBtn.setText(_translate("Form", "Previous"))
+        self.previousPageBtn.setText(_translate("Form", "Next"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:italic;\">Self Care Tips</span></p></body></html>"))
+        self.close_btn.setText(_translate("Form", "Close"))

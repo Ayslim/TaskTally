@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\program\view\uiFiles\mainWindow.ui'
+# Form implementation generated from reading ui file './program/view/uiFiles/mainWindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -14,33 +14,72 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1440, 872)
+        MainWindow.resize(1440, 789)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(560, 360, 301, 111))
-        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
-        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
-        self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout.setObjectName("gridLayout")
-        self.openStatsButton = QtWidgets.QPushButton(self.gridLayoutWidget)
-        self.openStatsButton.setObjectName("openStatsButton")
-        self.gridLayout.addWidget(self.openStatsButton, 1, 0, 1, 1)
-        self.openSelfCareButton = QtWidgets.QPushButton(self.gridLayoutWidget)
-        self.openSelfCareButton.setObjectName("openSelfCareButton")
-        self.gridLayout.addWidget(self.openSelfCareButton, 0, 0, 1, 1)
-        self.openTasksButton = QtWidgets.QPushButton(self.gridLayoutWidget)
-        self.openTasksButton.setObjectName("openTasksButton")
-        self.gridLayout.addWidget(self.openTasksButton, 0, 1, 1, 1)
-        self.openInfoButton = QtWidgets.QPushButton(self.gridLayoutWidget)
-        self.openInfoButton.setObjectName("openInfoButton")
-        self.gridLayout.addWidget(self.openInfoButton, 1, 1, 1, 1)
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(680, 280, 61, 41))
+        self.label.setGeometry(QtCore.QRect(470, 120, 471, 141))
+        self.label.setStyleSheet("QLabel {\n"
+"                font-size: 36pt;\n"
+"                font-weight: bold;\n"
+"                color: black;\n"
+"                border: 3px solid black;\n"
+"                border-radius: 15px;\n"
+"                padding: 15px;\n"
+"            }")
         self.label.setObjectName("label")
-        self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(690, 530, 60, 16))
-        self.label_2.setObjectName("label_2")
+        self.openSelfCareButton = QtWidgets.QPushButton(self.centralwidget)
+        self.openSelfCareButton.setGeometry(QtCore.QRect(750, 320, 300, 70))
+        self.openSelfCareButton.setStyleSheet("QPushButton {\n"
+"                font-size: 18pt;\n"
+"                font-weight: bold;\n"
+"                color: black;\n"
+"                border: 3px solid black;\n"
+"                border-radius: 10px;\n"
+"            }\n"
+"            QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }")
+        self.openSelfCareButton.setObjectName("openSelfCareButton")
+        self.openTasksButton = QtWidgets.QPushButton(self.centralwidget)
+        self.openTasksButton.setGeometry(QtCore.QRect(340, 320, 300, 70))
+        self.openTasksButton.setStyleSheet("QPushButton {\n"
+"                font-size: 18pt;\n"
+"                font-weight: bold;\n"
+"                color: black;\n"
+"                border: 3px solid black;\n"
+"                border-radius: 10px;\n"
+"            }\n"
+"            QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }")
+        self.openTasksButton.setObjectName("openTasksButton")
+        self.openInfoButton = QtWidgets.QPushButton(self.centralwidget)
+        self.openInfoButton.setGeometry(QtCore.QRect(760, 460, 300, 70))
+        self.openInfoButton.setStyleSheet("QPushButton {\n"
+"                font-size: 18pt;\n"
+"                font-weight: bold;\n"
+"                color: black;\n"
+"                border: 3px solid black;\n"
+"                border-radius: 10px;\n"
+"            }\n"
+"            QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }")
+        self.openInfoButton.setObjectName("openInfoButton")
+        self.openStatsButton = QtWidgets.QPushButton(self.centralwidget)
+        self.openStatsButton.setGeometry(QtCore.QRect(340, 460, 300, 70))
+        self.openStatsButton.setStyleSheet("QPushButton {\n"
+"                font-size: 18pt;\n"
+"                font-weight: bold;\n"
+"                color: black;\n"
+"                border: 3px solid black;\n"
+"                border-radius: 10px;\n"
+"            }\n"
+"            QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }")
+        self.openStatsButton.setObjectName("openStatsButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1440, 24))
@@ -56,9 +95,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.openStatsButton.setText(_translate("MainWindow", "Statistics"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:64pt; font-style:italic;\">TaskTally</span></p></body></html>"))
         self.openSelfCareButton.setText(_translate("MainWindow", "Self Care Tips"))
         self.openTasksButton.setText(_translate("MainWindow", "To-Do List"))
         self.openInfoButton.setText(_translate("MainWindow", "Info Page"))
-        self.label.setText(_translate("MainWindow", "TaskTally"))
-        self.label_2.setText(_translate("MainWindow", "Points: 0"))
+        self.openStatsButton.setText(_translate("MainWindow", "Statistics"))

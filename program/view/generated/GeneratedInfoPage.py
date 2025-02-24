@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\program\view\uiFiles\infoPage.ui'
+# Form implementation generated from reading ui file './program/view/uiFiles/infoPage.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -14,152 +14,40 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(591, 596)
-        self.scrollArea = QtWidgets.QScrollArea(Form)
-        self.scrollArea.setGeometry(QtCore.QRect(0, 10, 591, 581))
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        self.scrollArea.setFont(font)
-        self.scrollArea.setWidgetResizable(True)
-        self.scrollArea.setObjectName("scrollArea")
-        self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, -361, 568, 956))
-        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.label_2 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.label_2.setMaximumSize(QtCore.QSize(16777215, 16000000))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_2.setFont(font)
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout.addWidget(self.label_2)
-        self.label_4 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_4.setFont(font)
-        self.label_4.setObjectName("label_4")
-        self.verticalLayout.addWidget(self.label_4)
-        self.label_3 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        font.setKerning(True)
-        self.label_3.setFont(font)
-        self.label_3.setWordWrap(True)
-        self.label_3.setObjectName("label_3")
-        self.verticalLayout.addWidget(self.label_3)
-        self.label_5 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        self.label_5.setMaximumSize(QtCore.QSize(16777215, 89))
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_5.setFont(font)
-        self.label_5.setObjectName("label_5")
-        self.verticalLayout.addWidget(self.label_5)
-        self.label_6 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        font.setKerning(True)
-        self.label_6.setFont(font)
-        self.label_6.setWordWrap(True)
-        self.label_6.setObjectName("label_6")
-        self.verticalLayout.addWidget(self.label_6)
-        self.label_7 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        font.setBold(True)
-        font.setWeight(75)
-        font.setKerning(True)
-        self.label_7.setFont(font)
-        self.label_7.setWordWrap(True)
-        self.label_7.setObjectName("label_7")
-        self.verticalLayout.addWidget(self.label_7)
-        self.label_8 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        font.setKerning(True)
-        self.label_8.setFont(font)
-        self.label_8.setWordWrap(True)
-        self.label_8.setObjectName("label_8")
-        self.verticalLayout.addWidget(self.label_8)
-        self.label_9 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        font.setBold(True)
-        font.setWeight(75)
-        font.setKerning(True)
-        self.label_9.setFont(font)
-        self.label_9.setWordWrap(True)
-        self.label_9.setObjectName("label_9")
-        self.verticalLayout.addWidget(self.label_9)
-        self.label_10 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        font.setKerning(True)
-        self.label_10.setFont(font)
-        self.label_10.setWordWrap(True)
-        self.label_10.setObjectName("label_10")
-        self.verticalLayout.addWidget(self.label_10)
-        self.label_11 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        font.setBold(True)
-        font.setWeight(75)
-        font.setKerning(True)
-        self.label_11.setFont(font)
-        self.label_11.setWordWrap(True)
-        self.label_11.setObjectName("label_11")
-        self.verticalLayout.addWidget(self.label_11)
-        self.label_12 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        font.setKerning(True)
-        self.label_12.setFont(font)
-        self.label_12.setWordWrap(True)
-        self.label_12.setObjectName("label_12")
-        self.verticalLayout.addWidget(self.label_12)
-        self.label_13 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        font.setBold(True)
-        font.setWeight(75)
-        font.setKerning(True)
-        self.label_13.setFont(font)
-        self.label_13.setWordWrap(True)
-        self.label_13.setObjectName("label_13")
-        self.verticalLayout.addWidget(self.label_13)
-        self.label_14 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        font.setKerning(True)
-        self.label_14.setFont(font)
-        self.label_14.setWordWrap(True)
-        self.label_14.setObjectName("label_14")
-        self.verticalLayout.addWidget(self.label_14)
-        self.label_15 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        font.setBold(True)
-        font.setWeight(75)
-        font.setKerning(True)
-        self.label_15.setFont(font)
-        self.label_15.setWordWrap(True)
-        self.label_15.setObjectName("label_15")
-        self.verticalLayout.addWidget(self.label_15)
-        self.label_16 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        font.setKerning(True)
-        self.label_16.setFont(font)
-        self.label_16.setWordWrap(True)
-        self.label_16.setObjectName("label_16")
-        self.verticalLayout.addWidget(self.label_16)
-        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        Form.resize(1440, 789)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(530, 70, 371, 81))
+        self.label.setStyleSheet("QLabel {\n"
+"                color: black;\n"
+"                   font-size: 48px;\n"
+"                font-style: italic;\n"
+"                font-weight: bold;\n"
+"                padding: 10px;\n"
+"                border-radius: 5px;\n"
+"                border: 2px solid black;\n"
+"            }")
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setGeometry(QtCore.QRect(30, 30, 90, 30))
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"                color: black;\n"
+"                border: 2px solid black;\n"
+"                border-radius: 5px;\n"
+"            }\n"
+"            QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }")
+        self.pushButton.setObjectName("pushButton")
+        self.textEdit = QtWidgets.QTextEdit(Form)
+        self.textEdit.setGeometry(QtCore.QRect(90, 180, 1261, 531))
+        self.textEdit.setStyleSheet("QTextEdit {\n"
+"                background-color: #ECECEC; \n"
+"                color: black;\n"
+"                border: 2px solid black;\n"
+"                border-radius: 5px;\n"
+"                padding: 10px;\n"
+"            }")
+        self.textEdit.setObjectName("textEdit")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -167,45 +55,58 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.label_2.setText(_translate("Form", "TaskTally - Your Productivity & Self-Care Companion"))
-        self.label_4.setText(_translate("Form", "\n"
-"About TaskTally:"))
-        self.label_3.setText(_translate("Form", "TaskTally is designed to help individuals of all ages, from teenagers to senior citizens, plan their days effectively, stay motivated, and incorporate self-care into their routine. Many people struggle with prioritizing their mental health, which can lead to neglecting essential tasks. TaskTally aims to change that by promoting self-care and productivity together."))
-        self.label_5.setText(_translate("Form", "\n"
-"Features:"))
-        self.label_6.setText(_translate("Form", "● To-Do List: Easily add, organize, and check off tasks, including predefined self-care activities.\n"
-"● Progress Tracking: Get insights into your efficiency and productivity over time.\n"
-"● Motivational Tips & Self-Care Messages: Receive supportive quotes, tips, and advice to boost inspiration.\n"
-"● Statistics & Insights: Visualize your progress and identify areas for improvement."))
-        self.label_7.setText(_translate("Form", "\n"
-"How to Use TaskTally:"))
-        self.label_8.setText(_translate("Form", "1. Navigate the Menu: Use the main menu to access different sections.\n"
-"2. Manage Your Tasks: Add and complete tasks in the To-Do List section.\n"
-"3. View Your Progress: Check the Statistics page to see how well you\'re doing.\n"
-"4. Stay Motivated: Read useful productivity and self-care tips to boost your efficiency.\n"
-"5. Earn Points: Complete tasks and accumulate points.\n"
-"6. Learn More: Visit this Info page whenever you need guidance on using the app."))
-        self.label_9.setText(_translate("Form", "\n"
-"Ethical Aspects & Social Responsibility:"))
-        self.label_10.setText(_translate("Form", "● Accessibility: TaskTally follows the Web Content Accessibility Guidelines (WCAG) to ensure usability for all age groups.\n"
-"● Data Transparency: Users will be informed about how their data is used.\n"
-"● Reliable Information: Self-care tips will be backed by scientific evidence or credible sources. A disclaimer will clarify that TaskTally is not developed by mental health professionals."))
-        self.label_11.setText(_translate("Form", "\n"
-"Why Use TaskTally?:"))
-        self.label_12.setText(_translate("Form", "● Encourages self-care and mental well-being.\n"
-"● Helps with daily planning and task management.\n"
-"● Encourages productivity and habit-building.\n"
-"● Offers insightful feedback on your progress.\n"
-"● Provides motivational support to keep you on track."))
-        self.label_13.setText(_translate("Form", "\n"
-"Overview of System Architecture:"))
-        self.label_14.setText(_translate("Form", "Main Menu:\n"
-"\n"
-"● Self-Care Tips\n"
-"● To-Do List\n"
-"● Statistics\n"
-"● Info Page"))
-        self.label_15.setText(_translate("Form", "\n"
-"Contact & Support:"))
-        self.label_16.setText(_translate("Form", "If you have any questions, feedback, or need assistance, feel free to reach out to our support team at “support@tasktally.com.” (in this case we dont have a support team mail, but it looks fun to add that hahahahah)\n"
-"Start your journey toward better productivity and self-care with TaskTally today!"))
+        self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-weight:600; font-style:italic;\">Information</span></p></body></html>"))
+        self.pushButton.setText(_translate("Form", "Close"))
+        self.textEdit.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:36pt; font-weight:600; color:#000000;\">TaskTally - Your Productivity &amp; Self-Care Companion</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:36pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\">About TaskTally:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">TaskTally is designed to help individuals of all ages, from teenagers to senior citizens, plan their days effectively, stay motivated, and incorporate self-care into their routine. Many people struggle with prioritizing their mental health, which can lead to neglecting essential tasks. TaskTally aims to change that by promoting self-care and productivity together.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:18pt; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\">Features:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">To-Do List</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Easily add, organize, and check off tasks, including predefined self-care activities.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Progress Tracking</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Get insights into your efficiency and productivity over time.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Motivational Tips &amp; Self-Care Messages</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Receive supportive quotes, tips, and advice to boost inspiration.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Statistics &amp; Insights</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Visualize your progress and identify areas for improvement.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\">How to Use TaskTally:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">1. Navigate the Menu</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Use the main menu to access different sections.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">2. Manage Your Tasks</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Add and complete tasks in the To-Do List section.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">3. View Your Progress</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Check the Statistics page to see how well you\'re doing.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">4. Stay Motivated</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Read useful productivity and self-care tips to boost your efficiency.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">5. Earn Points</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Complete tasks and accumulate points.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">6. Learn More</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Visit this Info page whenever you need guidance on using the app.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\">Ethical Aspects &amp; Social Responsibility:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Accessibility</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: TaskTally follows the </span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#103cc0;\">Web Content Accessibility Guidelines (WCAG)</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\"> to ensure usability for all age groups.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Data Transparency</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Users will be informed about how their data is used.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Reliable Information</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">: Self-care tips will be backed by scientific evidence or credible sources. A disclaimer will clarify that TaskTally is not developed by mental health professionals.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\">Why Use TaskTally?</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● Encourages </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">self-care and mental well-being</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● Helps with </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">daily planning</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\"> and </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">task management</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● Encourages </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">productivity</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\"> and </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">habit-building</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● Offers </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">insightful feedback</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\"> on your progress.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● Provides </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">motivational support</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\"> to keep you on track.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\">Overview of System Architecture:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Main Menu:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Self-Care Tips</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">To-Do List</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Statistics</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">● </span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#000000;\">Info Page</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\">Contact &amp; Support:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Arial\'; font-size:24pt; font-weight:600; color:#000000;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">If you have any questions, feedback, or need assistance, feel free to reach out to our support team at “</span><span style=\" font-family:\'Arial\'; font-size:18pt; font-weight:600; color:#103cc0;\">support@tasktally.com</span><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">.”</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Arial\'; font-size:18pt; color:#000000;\">Start your journey toward better productivity and self-care with TaskTally today!</span><span style=\" font-size:18pt;\"> </span></p></body></html>"))

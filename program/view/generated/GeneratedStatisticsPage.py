@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\program\view\uiFiles\statistics.ui'
+# Form implementation generated from reading ui file './program/view/uiFiles/statistics.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -14,9 +14,22 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(600, 600)
+        Form.resize(1440, 789)
         self.tbl_stats = QtWidgets.QTableWidget(Form)
-        self.tbl_stats.setGeometry(QtCore.QRect(30, 150, 511, 201))
+        self.tbl_stats.setGeometry(QtCore.QRect(230, 190, 1001, 511))
+        self.tbl_stats.setStyleSheet("QTableWidget {\n"
+"                border: 2px solid black;\n"
+"                background-color: #ECECEC;\n"
+"                border-radius: 5px;\n"
+"            }\n"
+"            \n"
+"            QHeaderView::section {\n"
+"                background-color: #d3d3d3;\n"
+"                font-size: 14pt; \n"
+"                font-weight: bold;\n"
+"                color: black;\n"
+"                padding: 5px;\n"
+"            }")
         self.tbl_stats.setObjectName("tbl_stats")
         self.tbl_stats.setColumnCount(4)
         self.tbl_stats.setRowCount(0)
@@ -28,16 +41,42 @@ class Ui_Form(object):
         self.tbl_stats.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         self.tbl_stats.setHorizontalHeaderItem(3, item)
-        self.previousPageBtn_2 = QtWidgets.QPushButton(Form)
-        self.previousPageBtn_2.setGeometry(QtCore.QRect(440, 390, 93, 28))
-        self.previousPageBtn_2.setObjectName("previousPageBtn_2")
+        self.tbl_stats.horizontalHeader().setCascadingSectionResizes(False)
+        self.tbl_stats.horizontalHeader().setDefaultSectionSize(250)
+        self.tbl_stats.horizontalHeader().setMinimumSectionSize(19)
+        self.tbl_stats.verticalHeader().setDefaultSectionSize(30)
+        self.tbl_stats.verticalHeader().setMinimumSectionSize(70)
+        self.tbl_stats.verticalHeader().setSortIndicatorShown(False)
+        self.close_btn = QtWidgets.QPushButton(Form)
+        self.close_btn.setGeometry(QtCore.QRect(30, 30, 90, 30))
+        self.close_btn.setStyleSheet("QPushButton {\n"
+"                color: black;\n"
+"              border: 2px solid black;\n"
+"              border-radius: 5px;\n"
+"            }\n"
+"           QPushButton:hover {\n"
+"                background-color: #d3d3d3;\n"
+"            }\n"
+"            \n"
+"          ")
+        self.close_btn.setObjectName("close_btn")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(30, 30, 421, 41))
+        self.label_2.setGeometry(QtCore.QRect(500, 70, 461, 81))
         font = QtGui.QFont()
-        font.setPointSize(14)
+        font.setPointSize(-1)
         font.setBold(True)
+        font.setItalic(True)
         font.setWeight(75)
         self.label_2.setFont(font)
+        self.label_2.setStyleSheet("QLabel {\n"
+"                color: black;\n"
+"                   font-size: 48px;\n"
+"                font-style: italic;\n"
+"                font-weight: bold;\n"
+"                padding: 10px;\n"
+"                border-radius: 5px;\n"
+"                border: 2px solid black;\n"
+"            }")
         self.label_2.setObjectName("label_2")
 
         self.retranslateUi(Form)
@@ -47,12 +86,12 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         item = self.tbl_stats.horizontalHeaderItem(0)
-        item.setText(_translate("Form", "New Column"))
+        item.setText(_translate("Form", "Task completed"))
         item = self.tbl_stats.horizontalHeaderItem(1)
-        item.setText(_translate("Form", "Task Completed"))
+        item.setText(_translate("Form", "Points"))
         item = self.tbl_stats.horizontalHeaderItem(2)
         item.setText(_translate("Form", "Date"))
         item = self.tbl_stats.horizontalHeaderItem(3)
-        item.setText(_translate("Form", "Streak"))
-        self.previousPageBtn_2.setText(_translate("Form", "Close"))
-        self.label_2.setText(_translate("Form", "Statistics"))
+        item.setText(_translate("Form", "Total points"))
+        self.close_btn.setText(_translate("Form", "Close"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:italic;\">Statistics</span></p></body></html>"))

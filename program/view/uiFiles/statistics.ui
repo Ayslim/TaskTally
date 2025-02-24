@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>600</height>
+    <width>1440</width>
+    <height>789</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,20 +16,53 @@
   <widget class="QTableWidget" name="tbl_stats">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>150</y>
-     <width>511</width>
-     <height>201</height>
+     <x>230</x>
+     <y>190</y>
+     <width>1001</width>
+     <height>511</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+                border: 2px solid black;
+                background-color: #ECECEC;
+                border-radius: 5px;
+            }
+            
+            QHeaderView::section {
+                background-color: #d3d3d3;
+                font-size: 14pt; 
+                font-weight: bold;
+                color: black;
+                padding: 5px;
+            }</string>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>250</number>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>19</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>70</number>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
    <column>
     <property name="text">
-     <string>New Column</string>
+     <string>Task completed</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>Task Completed</string>
+     <string>Points</string>
     </property>
    </column>
    <column>
@@ -39,18 +72,30 @@
    </column>
    <column>
     <property name="text">
-     <string>Streak</string>
+     <string>Total points</string>
     </property>
    </column>
   </widget>
-  <widget class="QPushButton" name="previousPageBtn_2">
+  <widget class="QPushButton" name="close_btn">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>390</y>
-     <width>93</width>
-     <height>28</height>
+     <x>30</x>
+     <y>30</y>
+     <width>90</width>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+       	     color: black;
+              border: 2px solid black;
+              border-radius: 5px;
+            }
+           QPushButton:hover {
+                background-color: #d3d3d3;
+            }
+            
+          </string>
    </property>
    <property name="text">
     <string>Close</string>
@@ -59,21 +104,33 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>421</width>
-     <height>41</height>
+     <x>500</x>
+     <y>70</y>
+     <width>461</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>14</pointsize>
+     <pointsize>-1</pointsize>
      <weight>75</weight>
+     <italic>true</italic>
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+                color: black;
+            	   font-size: 48px;
+                font-style: italic;
+                font-weight: bold;
+                padding: 10px;
+                border-radius: 5px;
+                border: 2px solid black;
+            }</string>
+   </property>
    <property name="text">
-    <string>Statistics</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-style:italic;&quot;&gt;Statistics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>
