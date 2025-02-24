@@ -6,12 +6,13 @@ class SelfCareTipsPage(QtWidgets.QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.tip1title.setText("You are the prize. Stop acting like you're the option.")
-        self.tip1label.setText("Reminder: Your time and energy are valuable. Prioritize tasks and people that align with your goals and well-being.")
-        self.tip2title.setText("You don't have to be perfect, you just have to try.")
-        self.tip2label.setText("Reminder: Progress is more important than perfection. Even small efforts count.")
-        self.tip3title.setText("Your life is a reflection of the standards you set for yourself.")
-        self.tip3label.setText("Reminder: Set realistic but meaningful goals for your day. You deserve a life that feels fulfilling.")
+        self.close_btn.clicked.connect(self.close)
+        # self.tip1title.setText("You are the prize. Stop acting like you're the option.")
+        # self.tip1label.setText("Reminder: Your time and energy are valuable. Prioritize tasks and people that align with your goals and well-being.")
+        # self.tip2title.setText("You don't have to be perfect, you just have to try.")
+        # self.tip2label.setText("Reminder: Progress is more important than perfection. Even small efforts count.")
+        # self.tip3title.setText("Your life is a reflection of the standards you set for yourself.")
+        # self.tip3label.setText("Reminder: Set realistic but meaningful goals for your day. You deserve a life that feels fulfilling.")
 
         ##the ones i added:
         #self.tip4_title.setText("Stop waiting for motivation. Discipline will take you further.")
