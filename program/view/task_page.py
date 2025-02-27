@@ -5,6 +5,7 @@ class TaskPage(QtWidgets.QWidget, Ui_Form):
     def __init__(self, controller):
         super().__init__()
         self.setupUi(self)
+        self.pushButton.clicked.connect(self.close)
         self.controller = controller
 
         # Don't update this variable, just use it to look up scores
