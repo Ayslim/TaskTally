@@ -20,3 +20,6 @@ class TaskListController:
     #Changes the completed status of a specific task:
     def set_completed_status_on_task(self, task_description, completed):
         return self.ref.child(task_description).update({"completed": completed})
+    
+    def addTaskToDatabase(self, customTaskDescription, customTaskPoints):
+        self.ref.child(customTaskDescription).set({"completed": False, "score": customTaskPoints})
