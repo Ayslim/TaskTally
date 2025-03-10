@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './program/view/uiFiles/selfCareTips.ui'
+# Form implementation generated from reading ui file '.\program\view\uiFiles\selfCareTips.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #

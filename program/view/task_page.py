@@ -22,6 +22,7 @@ class TaskPage(QtWidgets.QWidget, Ui_Form):
 
         self.resetAllTasksBtn.clicked.connect(self.resetAllTasks)
         self.taskListView.itemChanged.connect(self.taskUpdated)
+        self.customTaskBtn.clicked.connect(self.taskAdded)
         self.updateTotalScore()
     
     # Updates each item in the list, which causes taskUpdated() to be run, which updates the total score and the completed status in the db
@@ -57,6 +58,23 @@ class TaskPage(QtWidgets.QWidget, Ui_Form):
         # This is a list comprehension that gets item 0, item 1, item 2, etc.
         # This returns a list of QListWidgetItem
         return [self.taskListView.item(x) for x in range(self.taskListView.count())]
+    
+    def taskAdded(self):
+        customTaskDescription = self.customTaskDescription.text()
+        customTaskPoints = self.customTaskPoints.value()
+
+        self.customTaskDescription.clear()
+        self.customTaskPoints.clear()
+
+        self.controller.addTaskToDatabase(customTaskDescription, customTaskPoints)
+
+        self.data_from_db[customTaskDescription] = {"completed": False, "score": customTaskPoints}
+
+        label = f"({customTaskPoints}) {customTaskDescription}"
+        item = QtWidgets.QListWidgetItem(label)
+        item.setCheckState(QtCore.Qt.Unchecked)
+        self.taskListView.addItem(item)
+
         
        
 

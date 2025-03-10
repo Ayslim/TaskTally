@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './program/view/uiFiles/taskPage.ui'
+# Form implementation generated from reading ui file '.\program\view\uiFiles\taskPage.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -42,7 +42,7 @@ class Ui_Form(object):
 "            }")
         self.label.setObjectName("label")
         self.taskListView = QtWidgets.QListWidget(Form)
-        self.taskListView.setGeometry(QtCore.QRect(130, 200, 911, 471))
+        self.taskListView.setGeometry(QtCore.QRect(130, 200, 911, 421))
         self.taskListView.setStyleSheet("QListWidget {\n"
 "               font-size: 20pt;\n"
 "               border: 2px solid black;\n"
@@ -75,6 +75,36 @@ class Ui_Form(object):
 "                border: 2px solid black;\n"
 "            }")
         self.label_2.setObjectName("label_2")
+        self.customTaskDescription = QtWidgets.QLineEdit(Form)
+        self.customTaskDescription.setGeometry(QtCore.QRect(130, 730, 341, 31))
+        self.customTaskDescription.setObjectName("customTaskDescription")
+        self.customTaskPoints = QtWidgets.QSpinBox(Form)
+        self.customTaskPoints.setGeometry(QtCore.QRect(520, 730, 81, 31))
+        self.customTaskPoints.setObjectName("customTaskPoints")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(130, 700, 131, 21))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(Form)
+        self.label_4.setGeometry(QtCore.QRect(520, 710, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.customTaskBtn = QtWidgets.QPushButton(Form)
+        self.customTaskBtn.setGeometry(QtCore.QRect(630, 730, 121, 31))
+        self.customTaskBtn.setObjectName("customTaskBtn")
+        self.label_5 = QtWidgets.QLabel(Form)
+        self.label_5.setGeometry(QtCore.QRect(130, 660, 331, 31))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_5.setFont(font)
+        self.label_5.setMouseTracking(False)
+        self.label_5.setObjectName("label_5")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -87,3 +117,7 @@ class Ui_Form(object):
         self.label.setText(_translate("Form", "Score:"))
         self.pushButton.setText(_translate("Form", "Close"))
         self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-weight:600; font-style:italic;\">To-Do List</span></p></body></html>"))
+        self.label_3.setText(_translate("Form", "Task description"))
+        self.label_4.setText(_translate("Form", "Points"))
+        self.customTaskBtn.setText(_translate("Form", "Add custom task"))
+        self.label_5.setText(_translate("Form", "Add your own tasks"))
