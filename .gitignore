@@ -1,2 +1,5 @@
 # ignoring firebase service key
 credentials.json
+*.pyc
+/__pycache__
+__pycache__/

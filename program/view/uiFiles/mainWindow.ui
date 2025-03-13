@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>120</y>
+      <width>471</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+                font-size: 36pt;
+                font-weight: bold;
+                color: black;
+                border: 3px solid black;
+                border-radius: 15px;
+                padding: 15px;
+            }</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:64pt; font-style:italic;&quot;&gt;TaskTally&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openSelfCareButton">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>320</y>
+      <width>300</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                font-size: 18pt;
+                font-weight: bold;
+                color: black;
+                border: 3px solid black;
+                border-radius: 10px;
+            }
+            QPushButton:hover {
+                background-color: #d3d3d3;
+            }</string>
+    </property>
+    <property name="text">
+     <string>Self Care Tips</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openTasksButton">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>320</y>
+      <width>300</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                font-size: 18pt;
+                font-weight: bold;
+                color: black;
+                border: 3px solid black;
+                border-radius: 10px;
+            }
+            QPushButton:hover {
+                background-color: #d3d3d3;
+            }</string>
+    </property>
+    <property name="text">
+     <string>To-Do List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openInfoButton">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>460</y>
+      <width>300</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                font-size: 18pt;
+                font-weight: bold;
+                color: black;
+                border: 3px solid black;
+                border-radius: 10px;
+            }
+            QPushButton:hover {
+                background-color: #d3d3d3;
+            }</string>
+    </property>
+    <property name="text">
+     <string>Info Page</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openStatsButton">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>460</y>
+      <width>300</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                font-size: 18pt;
+                font-weight: bold;
+                color: black;
+                border: 3px solid black;
+                border-radius: 10px;
+            }
+            QPushButton:hover {
+                background-color: #d3d3d3;
+            }</string>
+    </property>
+    <property name="text">
+     <string>Statistics</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
