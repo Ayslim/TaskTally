@@ -31,12 +31,12 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QStackedWidget {
-               border: 2px solid black;
+               border: 2px solid #005A9E;
                border-radius: 10px;
             }</string>
    </property>
    <property name="currentIndex">
-    <number>8</number>
+    <number>13</number>
    </property>
    <widget class="QWidget" name="page_2">
     <widget class="QLabel" name="tip2label">
@@ -178,14 +178,14 @@
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>40</y>
-       <width>970</width>
-       <height>380</height>
+       <x>20</x>
+       <y>10</y>
+       <width>1041</width>
+       <height>431</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;&amp;quot;Stop overthinking and start doing. Action will always &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;beat fear.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Reminder: Overwhelmed by a task? Just start. Taking the first step is often the&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;hardest part.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;&amp;quot;Stop overthinking and start doing. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;Action will always beat fear.&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;Reminder: Overwhelmed by a task? Just start. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;Taking the first step is often &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;the hardest part.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -200,7 +200,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;&amp;quot;You are not stuck. You are just scared to move &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;forward.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Reminder: If planning feels overwhelming, break it down. Small steps will help&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;you move past fear.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;&amp;quot;You are not stuck. You are just scared to &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;move forward.&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;Reminder: If planning feels overwhelming, &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;break it down. Small steps will help&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;you move past fear.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -215,7 +215,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;&amp;quot;Your vibe attracts your tribe. Surround yourself with &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;people who uplift you.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Reminder: Share your goals with supportive people who encourage and&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;motivate you.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;&amp;quot;Your vibe attracts your tribe. Surround yourself with &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;people who uplift you.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;Reminder: Share your goals with supportive people who encourage and&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;motivate you.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -223,14 +223,14 @@
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>40</y>
-       <width>970</width>
-       <height>380</height>
+       <x>20</x>
+       <y>10</y>
+       <width>1031</width>
+       <height>441</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;&amp;quot;You are not lazy. You are just uninspired.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Reminder: If you’re struggling to find energy, try something new or reconnect&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;with your “why.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;&amp;quot;You are not lazy. You are just uninspired.&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;Reminder: If you’re struggling to find energy, &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;try something new or reconnect with your “why.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -238,14 +238,14 @@
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>40</y>
-       <width>970</width>
-       <height>380</height>
+       <x>10</x>
+       <y>10</y>
+       <width>1041</width>
+       <height>431</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;&amp;quot;You are capable of more than you think. Believe &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;in yourself.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Reminder: Even on tough days, trust that you have the strength to get through&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;it.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;&amp;quot;You are capable of more than you think. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;Believe in yourself.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;Reminder: Even on tough days, trust that you have &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;the strength to get through it.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -253,14 +253,14 @@
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>40</y>
-       <width>970</width>
-       <height>380</height>
+       <x>10</x>
+       <y>10</y>
+       <width>1051</width>
+       <height>441</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;&amp;quot;You are not here to shrink yourself for the comfort&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;of others.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Reminder: Don’t let guilt or others’ expectations dictate your day. Focus on&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;what truly matters to you.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;&amp;quot;You are not here to shrink yourself for the &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#005a9e;&quot;&gt;comfort of others.&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;Reminder: Don’t let guilt or others’ expectations &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; color:#005a9e;&quot;&gt;dictate your day. Focus on what truly matters to you.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -299,12 +299,13 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-       	     color: black;
-              border: 2px solid black;
+       	     color: white;
+              border: 2px solid #008CBA;
               border-radius: 5px;
+			  background-color: #008CBA
             }
            QPushButton:hover {
-                background-color: #d3d3d3;
+                background-color: #005A9E;
             }
             </string>
    </property>
@@ -323,12 +324,13 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-       	     color: black;
-              border: 2px solid black;
+       	     color: white;
+              border: 2px solid #008CBA;
               border-radius: 5px;
+			  background-color: #008CBA
             }
            QPushButton:hover {
-                background-color: #d3d3d3;
+                background-color: #005A9E;
             }
             </string>
    </property>
@@ -341,31 +343,29 @@
     <rect>
      <x>420</x>
      <y>40</y>
-     <width>561</width>
-     <height>81</height>
+     <width>641</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>-1</pointsize>
      <weight>75</weight>
-     <italic>true</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel {
-                color: black;
-            	   font-size: 48px;
-                font-style: italic;
+                color: #005A9E;
+            	font-size: 48px;
                 font-weight: bold;
                 padding: 10px;
                 border-radius: 5px;
-                border: 2px solid black;
+                border: 2px solid #005A9E;
             }</string>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-style:italic;&quot;&gt;Self Care Tips&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-style:normal;&quot;&gt;Self Care Tips&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="close_btn">
@@ -379,12 +379,13 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-       	     color: black;
-              border: 2px solid black;
+       	     color: white;
+              border: 2px solid #008CBA;
               border-radius: 5px;
+			  background-color: #008CBA
             }
            QPushButton:hover {
-                background-color: #d3d3d3;
+                background-color: #005A9E;
             }
             </string>
    </property>
