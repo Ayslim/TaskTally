@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\program\view\uiFiles\selfCareTips.ui'
+# Form implementation generated from reading ui file 'selfCareTips.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -23,7 +23,7 @@ class Ui_Form(object):
         font.setWeight(50)
         self.stackedWidget.setFont(font)
         self.stackedWidget.setStyleSheet("QStackedWidget {\n"
-"               border: 2px solid black;\n"
+"               border: 2px solid #005A9E;\n"
 "               border-radius: 10px;\n"
 "            }")
         self.stackedWidget.setObjectName("stackedWidget")
@@ -86,7 +86,7 @@ class Ui_Form(object):
         self.page_10 = QtWidgets.QWidget()
         self.page_10.setObjectName("page_10")
         self.label_8 = QtWidgets.QLabel(self.page_10)
-        self.label_8.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_8.setGeometry(QtCore.QRect(20, 10, 1041, 431))
         self.label_8.setObjectName("label_8")
         self.stackedWidget.addWidget(self.page_10)
         self.page_11 = QtWidgets.QWidget()
@@ -104,19 +104,19 @@ class Ui_Form(object):
         self.page_13 = QtWidgets.QWidget()
         self.page_13.setObjectName("page_13")
         self.label_11 = QtWidgets.QLabel(self.page_13)
-        self.label_11.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_11.setGeometry(QtCore.QRect(20, 10, 1031, 441))
         self.label_11.setObjectName("label_11")
         self.stackedWidget.addWidget(self.page_13)
         self.page_15 = QtWidgets.QWidget()
         self.page_15.setObjectName("page_15")
         self.label_13 = QtWidgets.QLabel(self.page_15)
-        self.label_13.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_13.setGeometry(QtCore.QRect(10, 10, 1041, 431))
         self.label_13.setObjectName("label_13")
         self.stackedWidget.addWidget(self.page_15)
         self.page_14 = QtWidgets.QWidget()
         self.page_14.setObjectName("page_14")
         self.label_12 = QtWidgets.QLabel(self.page_14)
-        self.label_12.setGeometry(QtCore.QRect(40, 40, 970, 380))
+        self.label_12.setGeometry(QtCore.QRect(10, 10, 1051, 441))
         self.label_12.setObjectName("label_12")
         self.stackedWidget.addWidget(self.page_14)
         self.page = QtWidgets.QWidget()
@@ -132,60 +132,61 @@ class Ui_Form(object):
         self.nextPageBtn = QtWidgets.QPushButton(Form)
         self.nextPageBtn.setGeometry(QtCore.QRect(190, 660, 93, 28))
         self.nextPageBtn.setStyleSheet("QPushButton {\n"
-"                color: black;\n"
-"              border: 2px solid black;\n"
+"                color: white;\n"
+"              border: 2px solid #008CBA;\n"
 "              border-radius: 5px;\n"
+"              background-color: #008CBA\n"
 "            }\n"
 "           QPushButton:hover {\n"
-"                background-color: #d3d3d3;\n"
+"                background-color: #005A9E;\n"
 "            }\n"
 "            ")
         self.nextPageBtn.setObjectName("nextPageBtn")
         self.previousPageBtn = QtWidgets.QPushButton(Form)
         self.previousPageBtn.setGeometry(QtCore.QRect(1170, 660, 93, 28))
         self.previousPageBtn.setStyleSheet("QPushButton {\n"
-"                color: black;\n"
-"              border: 2px solid black;\n"
+"                color: white;\n"
+"              border: 2px solid #008CBA;\n"
 "              border-radius: 5px;\n"
+"              background-color: #008CBA\n"
 "            }\n"
 "           QPushButton:hover {\n"
-"                background-color: #d3d3d3;\n"
+"                background-color: #005A9E;\n"
 "            }\n"
 "            ")
         self.previousPageBtn.setObjectName("previousPageBtn")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(420, 40, 561, 81))
+        self.label_2.setGeometry(QtCore.QRect(420, 40, 641, 121))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
-        font.setItalic(True)
         font.setWeight(75)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("QLabel {\n"
-"                color: black;\n"
-"                   font-size: 48px;\n"
-"                font-style: italic;\n"
+"                color: #005A9E;\n"
+"                font-size: 48px;\n"
 "                font-weight: bold;\n"
 "                padding: 10px;\n"
 "                border-radius: 5px;\n"
-"                border: 2px solid black;\n"
+"                border: 2px solid #005A9E;\n"
 "            }")
         self.label_2.setObjectName("label_2")
         self.close_btn = QtWidgets.QPushButton(Form)
         self.close_btn.setGeometry(QtCore.QRect(30, 30, 90, 30))
         self.close_btn.setStyleSheet("QPushButton {\n"
-"                color: black;\n"
-"              border: 2px solid black;\n"
+"                color: white;\n"
+"              border: 2px solid #008CBA;\n"
 "              border-radius: 5px;\n"
+"              background-color: #008CBA\n"
 "            }\n"
 "           QPushButton:hover {\n"
-"                background-color: #d3d3d3;\n"
+"                background-color: #005A9E;\n"
 "            }\n"
 "            ")
         self.close_btn.setObjectName("close_btn")
 
         self.retranslateUi(Form)
-        self.stackedWidget.setCurrentIndex(8)
+        self.stackedWidget.setCurrentIndex(13)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -199,14 +200,24 @@ class Ui_Form(object):
         self.label_5.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are allowed to take up space. You are allowed to </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">exist unapologetically.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Don’t feel guilty for prioritizing your needs. Self-care isn’t</span></p><p align=\"center\"><span style=\" font-size:24pt;\">selfish—it’s necessary.</span></p></body></html>"))
         self.label_6.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;The way you speak to yourself matters. Be kind to </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">yourself.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Replace negative self-talk with encouragement. Instead of “I can’t</span></p><p align=\"center\"><span style=\" font-size:24pt;\">do this,” try “I’ll do my best.”</span></p></body></html>"))
         self.label_7.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are the CEO of your life. Take responsibility for it.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: You have the power to plan your day and make choices that serve</span></p><p align=\"center\"><span style=\" font-size:24pt;\">you. Take charge, one step at a time.</span></p></body></html>"))
-        self.label_8.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;Stop overthinking and start doing. Action will always </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">beat fear.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Overwhelmed by a task? Just start. Taking the first step is often the</span></p><p align=\"center\"><span style=\" font-size:24pt;\">hardest part.</span></p></body></html>"))
-        self.label_9.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are not stuck. You are just scared to move </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">forward.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: If planning feels overwhelming, break it down. Small steps will help</span></p><p align=\"center\"><span style=\" font-size:24pt;\">you move past fear.</span></p></body></html>"))
-        self.label_10.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;Your vibe attracts your tribe. Surround yourself with </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">people who uplift you.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Share your goals with supportive people who encourage and</span></p><p align=\"center\"><span style=\" font-size:24pt;\">motivate you.</span></p></body></html>"))
-        self.label_11.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are not lazy. You are just uninspired.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: If you’re struggling to find energy, try something new or reconnect</span></p><p align=\"center\"><span style=\" font-size:24pt;\">with your “why.</span></p></body></html>"))
-        self.label_13.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are capable of more than you think. Believe </span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">in yourself.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Even on tough days, trust that you have the strength to get through</span></p><p align=\"center\"><span style=\" font-size:24pt;\">it.</span></p></body></html>"))
-        self.label_12.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">&quot;You are not here to shrink yourself for the comfort</span></p><p align=\"center\"><span style=\" font-size:36pt; font-weight:600;\">of others.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:24pt;\">Reminder: Don’t let guilt or others’ expectations dictate your day. Focus on</span></p><p align=\"center\"><span style=\" font-size:24pt;\">what truly matters to you.</span></p></body></html>"))
+        self.label_8.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">&quot;Stop overthinking and start doing. </span></p><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">Action will always beat fear.&quot;</span><span style=\" font-size:26pt; color:#005a9e;\"><br/></span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">Reminder: Overwhelmed by a task? Just start. </span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">Taking the first step is often </span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">the hardest part.</span></p></body></html>"))
+        self.label_9.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">&quot;You are not stuck. You are just scared to </span></p><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">move forward.&quot;</span><span style=\" font-size:26pt; color:#005a9e;\"><br/></span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">Reminder: If planning feels overwhelming, </span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">break it down. Small steps will help</span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">you move past fear.</span></p></body></html>"))
+        self.label_10.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">&quot;Your vibe attracts your tribe. Surround yourself with </span></p><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">people who uplift you.&quot;</span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">Reminder: Share your goals with supportive people who encourage and</span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">motivate you.</span></p></body></html>"))
+        self.label_11.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">&quot;You are not lazy. You are just uninspired.&quot;</span><span style=\" font-size:26pt; color:#005a9e;\"><br/></span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">Reminder: If you’re struggling to find energy, </span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">try something new or reconnect with your “why.</span></p></body></html>"))
+        self.label_13.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">&quot;You are capable of more than you think. </span></p><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">Believe in yourself.&quot;</span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">Reminder: Even on tough days, trust that you have </span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">the strength to get through it.</span></p></body></html>"))
+        self.label_12.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">&quot;You are not here to shrink yourself for the </span></p><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#005a9e;\">comfort of others.&quot;</span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">Reminder: Don’t let guilt or others’ expectations </span></p><p align=\"center\"><span style=\" font-size:26pt; color:#005a9e;\">dictate your day. Focus on what truly matters to you.</span></p></body></html>"))
         self.tip1label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:36pt; font-weight:600; color:#313131;\">&quot;You are the prize. Stop acting like you’re the option.&quot;</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">Reminder: Your time and energy are valuable. Prioritize tasks and people that</span></p><p align=\"center\"><span style=\" font-family:\'Helvetica\'; font-size:24pt; color:#313131;\">align with your goals and well-being.</span></p></body></html>"))
         self.nextPageBtn.setText(_translate("Form", "Previous"))
         self.previousPageBtn.setText(_translate("Form", "Next"))
-        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:italic;\">Self Care Tips</span></p></body></html>"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:normal;\">Self Care Tips</span></p></body></html>"))
         self.close_btn.setText(_translate("Form", "Close"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())
