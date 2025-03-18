@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\program\view\uiFiles\taskPage.ui'
+# Form implementation generated from reading ui file 'taskPage.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -18,92 +18,125 @@ class Ui_Form(object):
         self.resetAllTasksBtn = QtWidgets.QPushButton(Form)
         self.resetAllTasksBtn.setGeometry(QtCore.QRect(1080, 340, 81, 28))
         self.resetAllTasksBtn.setStyleSheet("QPushButton {\n"
-"                color: black;\n"
-"              border: 2px solid black;\n"
+"                color: white;\n"
+"              border: 2px solid #008CBA;\n"
 "              border-radius: 5px;\n"
+"              background-color: #008CBA\n"
 "            }\n"
 "           QPushButton:hover {\n"
-"                background-color: #d3d3d3;\n"
+"                background-color: #005A9E;\n"
 "            }\n"
-"            ")
+"            \n"
+"")
         self.resetAllTasksBtn.setObjectName("resetAllTasksBtn")
         self.totalScore = QtWidgets.QLabel(Form)
-        self.totalScore.setGeometry(QtCore.QRect(1170, 200, 71, 51))
+        self.totalScore.setGeometry(QtCore.QRect(1200, 200, 71, 51))
         self.totalScore.setStyleSheet("QLabel {\n"
-"                font-size: 30pt;\n"
-"                color: black;              \n"
+"                font-size: 26pt;\n"
+"                color: #005A9E;              \n"
 "            }")
         self.totalScore.setObjectName("totalScore")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(1070, 200, 111, 51))
         self.label.setStyleSheet("QLabel {\n"
-"                font-size: 30pt;\n"
-"                color: black;\n"
+"                font-size: 26pt;\n"
+"                color: #005A9E;\n"
 "            }")
         self.label.setObjectName("label")
         self.taskListView = QtWidgets.QListWidget(Form)
         self.taskListView.setGeometry(QtCore.QRect(130, 200, 911, 421))
         self.taskListView.setStyleSheet("QListWidget {\n"
 "               font-size: 20pt;\n"
-"               border: 2px solid black;\n"
+"               border: 2px solid #005A9E;\n"
 "               border-radius: 5px;\n"
 "               background-color: #ECECEC;\n"
 "               border-radius: 5px;\n"
+"               color: #005A9E;\n"
 "            }")
         self.taskListView.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
         self.taskListView.setObjectName("taskListView")
         self.pushButton = QtWidgets.QPushButton(Form)
         self.pushButton.setGeometry(QtCore.QRect(30, 30, 90, 30))
-        self.pushButton.setStyleSheet(" QPushButton {\n"
-"                color: black;\n"
-"              border: 2px solid black;\n"
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"                color: white;\n"
+"              border: 2px solid #008CBA;\n"
 "              border-radius: 5px;\n"
+"              background-color: #008CBA\n"
 "            }\n"
 "           QPushButton:hover {\n"
-"                background-color: #d3d3d3;\n"
-"            }")
+"                background-color: #005A9E;\n"
+"            }\n"
+"            ")
         self.pushButton.setObjectName("pushButton")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(500, 60, 531, 81))
+        self.label_2.setGeometry(QtCore.QRect(290, 60, 631, 111))
         self.label_2.setStyleSheet("QLabel {\n"
-"                color: black;\n"
-"                   font-size: 48px;\n"
+"                color: #005A9E;\n"
+"                font-size: 48px;\n"
 "                font-style: italic;\n"
 "                font-weight: bold;\n"
 "                padding: 10px;\n"
 "                border-radius: 5px;\n"
-"                border: 2px solid black;\n"
+"                border: 2px solid #005A9E;\n"
 "            }")
         self.label_2.setObjectName("label_2")
         self.customTaskDescription = QtWidgets.QLineEdit(Form)
         self.customTaskDescription.setGeometry(QtCore.QRect(130, 730, 341, 31))
+        self.customTaskDescription.setStyleSheet("QLineEdit {\n"
+"                border: 1px solid #005A9E;\n"
+"            }")
         self.customTaskDescription.setObjectName("customTaskDescription")
         self.customTaskPoints = QtWidgets.QSpinBox(Form)
         self.customTaskPoints.setGeometry(QtCore.QRect(520, 730, 81, 31))
+        self.customTaskPoints.setStyleSheet("QSpinBox {\n"
+"                color: #005A9E;\n"
+"                border: #005A9E;\n"
+"            }")
         self.customTaskPoints.setObjectName("customTaskPoints")
         self.label_3 = QtWidgets.QLabel(Form)
-        self.label_3.setGeometry(QtCore.QRect(130, 700, 131, 21))
+        self.label_3.setGeometry(QtCore.QRect(130, 700, 161, 21))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_3.setFont(font)
+        self.label_3.setStyleSheet("QLabel {\n"
+"                font-size: 12pt;\n"
+"                color: #005A9E;\n"
+"            }")
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(Form)
-        self.label_4.setGeometry(QtCore.QRect(520, 710, 47, 13))
+        self.label_4.setGeometry(QtCore.QRect(520, 710, 61, 16))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_4.setFont(font)
+        self.label_4.setStyleSheet("QLabel {\n"
+"                font-size: 12pt;\n"
+"                color: #005A9E;\n"
+"            }")
         self.label_4.setObjectName("label_4")
         self.customTaskBtn = QtWidgets.QPushButton(Form)
         self.customTaskBtn.setGeometry(QtCore.QRect(630, 730, 121, 31))
+        self.customTaskBtn.setStyleSheet("QPushButton {\n"
+"                color: white;\n"
+"              border: 2px solid #008CBA;\n"
+"              border-radius: 5px;\n"
+"              background-color: #008CBA\n"
+"            }\n"
+"           QPushButton:hover {\n"
+"                background-color: #005A9E;\n"
+"            }\n"
+"            \n"
+"")
         self.customTaskBtn.setObjectName("customTaskBtn")
         self.label_5 = QtWidgets.QLabel(Form)
         self.label_5.setGeometry(QtCore.QRect(130, 660, 331, 31))
         font = QtGui.QFont()
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setPointSize(18)
         self.label_5.setFont(font)
         self.label_5.setMouseTracking(False)
+        self.label_5.setStyleSheet("QLabel {\n"
+"                font-size: 18pt;\n"
+"                color: #005A9E;\n"
+"            }")
         self.label_5.setObjectName("label_5")
 
         self.retranslateUi(Form)
@@ -116,8 +149,18 @@ class Ui_Form(object):
         self.totalScore.setText(_translate("Form", "0"))
         self.label.setText(_translate("Form", "Score:"))
         self.pushButton.setText(_translate("Form", "Close"))
-        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-weight:600; font-style:italic;\">To-Do List</span></p></body></html>"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:normal;\">To-Do List</span></p></body></html>"))
         self.label_3.setText(_translate("Form", "Task description"))
         self.label_4.setText(_translate("Form", "Points"))
         self.customTaskBtn.setText(_translate("Form", "Add custom task"))
         self.label_5.setText(_translate("Form", "Add your own tasks"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())
