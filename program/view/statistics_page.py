@@ -12,7 +12,7 @@ class StatisticsPage(QtWidgets.QWidget, Ui_Form):
         self.updateProgressBar()
 
     def get_total_score(self):
-        tasks = self.controller.fetch_from_firebase()  # Use controller's method
+        tasks = self.controller.fetch_from_firebase()
         return sum(task["score"] for task in tasks.values() if task["completed"])
     
     def get_max_score(self):
@@ -22,4 +22,4 @@ class StatisticsPage(QtWidgets.QWidget, Ui_Form):
         return int((self.get_total_score() / self.get_max_score()) * 100)
     
     def updateProgressBar(self):
-        self.progressBar.setValue(self.getProgressBarValue())  # Assuming there's a progressBar in the UI
+        self.progressBar.setValue(self.getProgressBarValue())

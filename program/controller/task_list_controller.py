@@ -28,9 +28,10 @@ class TaskListController:
         tasks = self.fetch_from_firebase()
         return sum(task["score"] for task in tasks.values() if task["completed"])
     
-    def get_max_score(self):
-        return 100
-    
     def getProgressBarValue(self):
-        return int((self.get_total_score() / self.get_max_score()) * 100)
+        return int((self.get_total_score() / self.get_total_possible_points()) * 100)
+    
+    def get_total_possible_points(self):
+        tasks = self.fetch_from_firebase()
+        return sum(task["score"] for task in tasks.values())
     
