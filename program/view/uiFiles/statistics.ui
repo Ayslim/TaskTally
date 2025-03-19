@@ -56,13 +56,13 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel {
-                color: black;
+                color: rgb(7, 88, 157);
             	   font-size: 48px;
                 font-style: italic;
                 font-weight: bold;
                 padding: 10px;
                 border-radius: 5px;
-                border: 2px solid black;
+                border: 2px solid rgb(7, 88, 157);
             }</string>
    </property>
    <property name="text">
@@ -91,6 +91,15 @@
      <height>61</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> color: rgb(7, 88, 157);
+       </string>
+   </property>
    <property name="text">
     <string>Statement</string>
    </property>
@@ -109,6 +118,10 @@
      <pointsize>20</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true"> color: rgb(7, 88, 157);
+       </string>
+   </property>
    <property name="text">
     <string>Let's see how far you've come!</string>
    </property>
@@ -124,8 +137,14 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>40</pointsize>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">                color: rgb(7, 88, 157);
+            	   font-size: 40px;
+            </string>
    </property>
    <property name="text">
     <string>Progress Bar</string>
@@ -144,6 +163,10 @@
     <font>
      <pointsize>70</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> color: rgb(7, 88, 157);
+       </string>
    </property>
    <property name="text">
     <string>%</string>

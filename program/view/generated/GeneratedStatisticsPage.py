@@ -36,13 +36,13 @@ class Ui_Form(object):
         font.setItalic(True)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("QLabel {\n"
-"                color: black;\n"
+"                color: rgb(7, 88, 157);\n"
 "                   font-size: 48px;\n"
 "                font-style: italic;\n"
 "                font-weight: bold;\n"
 "                padding: 10px;\n"
 "                border-radius: 5px;\n"
-"                border: 2px solid black;\n"
+"                border: 2px solid rgb(7, 88, 157);\n"
 "            }")
         self.label_2.setObjectName("label_2")
         self.progressBar = QtWidgets.QProgressBar(Form)
@@ -51,24 +51,37 @@ class Ui_Form(object):
         self.progressBar.setObjectName("progressBar")
         self.statement = QtWidgets.QLabel(Form)
         self.statement.setGeometry(QtCore.QRect(470, 370, 511, 61))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.statement.setFont(font)
+        self.statement.setStyleSheet(" color: rgb(7, 88, 157);\n"
+"       ")
         self.statement.setObjectName("statement")
         self.progressBarSubtitle = QtWidgets.QLabel(Form)
         self.progressBarSubtitle.setGeometry(QtCore.QRect(170, 260, 271, 31))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.progressBarSubtitle.setFont(font)
+        self.progressBarSubtitle.setStyleSheet(" color: rgb(7, 88, 157);\n"
+"       ")
         self.progressBarSubtitle.setObjectName("progressBarSubtitle")
         self.progressBarTitle = QtWidgets.QLabel(Form)
         self.progressBarTitle.setGeometry(QtCore.QRect(170, 170, 271, 71))
         font = QtGui.QFont()
-        font.setPointSize(40)
+        font.setPointSize(-1)
+        font.setBold(True)
         self.progressBarTitle.setFont(font)
+        self.progressBarTitle.setStyleSheet("                color: rgb(7, 88, 157);\n"
+"                   font-size: 40px;\n"
+"            ")
         self.progressBarTitle.setObjectName("progressBarTitle")
         self.percentage = QtWidgets.QLabel(Form)
         self.percentage.setGeometry(QtCore.QRect(180, 350, 191, 101))
         font = QtGui.QFont()
         font.setPointSize(70)
         self.percentage.setFont(font)
+        self.percentage.setStyleSheet(" color: rgb(7, 88, 157);\n"
+"       ")
         self.percentage.setObjectName("percentage")
 
         self.retranslateUi(Form)
