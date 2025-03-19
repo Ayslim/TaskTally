@@ -15,38 +15,6 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1440, 789)
-        self.tbl_stats = QtWidgets.QTableWidget(Form)
-        self.tbl_stats.setGeometry(QtCore.QRect(230, 230, 1001, 471))
-        self.tbl_stats.setStyleSheet("QTableWidget {\n"
-"                border: 2px solid black;\n"
-"                background-color: #ECECEC;\n"
-"                border-radius: 5px;\n"
-"            }\n"
-"            \n"
-"            QHeaderView::section {\n"
-"                background-color: #d3d3d3;\n"
-"                font-size: 14pt; \n"
-"                font-weight: bold;\n"
-"                color: black;\n"
-"                padding: 5px;\n"
-"            }")
-        self.tbl_stats.setObjectName("tbl_stats")
-        self.tbl_stats.setColumnCount(4)
-        self.tbl_stats.setRowCount(0)
-        item = QtWidgets.QTableWidgetItem()
-        self.tbl_stats.setHorizontalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tbl_stats.setHorizontalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tbl_stats.setHorizontalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tbl_stats.setHorizontalHeaderItem(3, item)
-        self.tbl_stats.horizontalHeader().setCascadingSectionResizes(False)
-        self.tbl_stats.horizontalHeader().setDefaultSectionSize(250)
-        self.tbl_stats.horizontalHeader().setMinimumSectionSize(19)
-        self.tbl_stats.verticalHeader().setDefaultSectionSize(70)
-        self.tbl_stats.verticalHeader().setMinimumSectionSize(70)
-        self.tbl_stats.verticalHeader().setSortIndicatorShown(False)
         self.close_btn = QtWidgets.QPushButton(Form)
         self.close_btn.setGeometry(QtCore.QRect(30, 30, 90, 30))
         self.close_btn.setStyleSheet("QPushButton {\n"
@@ -78,9 +46,24 @@ class Ui_Form(object):
 "            }")
         self.label_2.setObjectName("label_2")
         self.progressBar = QtWidgets.QProgressBar(Form)
-        self.progressBar.setGeometry(QtCore.QRect(230, 192, 1001, 21))
+        self.progressBar.setGeometry(QtCore.QRect(170, 310, 1001, 21))
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
+        self.statement = QtWidgets.QLabel(Form)
+        self.statement.setGeometry(QtCore.QRect(230, 490, 141, 16))
+        self.statement.setObjectName("statement")
+        self.progressBarSubtitle = QtWidgets.QLabel(Form)
+        self.progressBarSubtitle.setGeometry(QtCore.QRect(170, 260, 271, 31))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.progressBarSubtitle.setFont(font)
+        self.progressBarSubtitle.setObjectName("progressBarSubtitle")
+        self.progressBarTitle = QtWidgets.QLabel(Form)
+        self.progressBarTitle.setGeometry(QtCore.QRect(210, 200, 58, 16))
+        self.progressBarTitle.setObjectName("progressBarTitle")
+        self.percentage = QtWidgets.QLabel(Form)
+        self.percentage.setGeometry(QtCore.QRect(390, 570, 58, 16))
+        self.percentage.setObjectName("percentage")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -88,13 +71,19 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        item = self.tbl_stats.horizontalHeaderItem(0)
-        item.setText(_translate("Form", "Task completed"))
-        item = self.tbl_stats.horizontalHeaderItem(1)
-        item.setText(_translate("Form", "Points"))
-        item = self.tbl_stats.horizontalHeaderItem(2)
-        item.setText(_translate("Form", "Date"))
-        item = self.tbl_stats.horizontalHeaderItem(3)
-        item.setText(_translate("Form", "Total points"))
         self.close_btn.setText(_translate("Form", "Close"))
         self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:italic;\">Statistics</span></p></body></html>"))
+        self.statement.setText(_translate("Form", "Statement"))
+        self.progressBarSubtitle.setText(_translate("Form", "Let\'s see how far you\'ve come!"))
+        self.progressBarTitle.setText(_translate("Form", "progressBarTitle"))
+        self.percentage.setText(_translate("Form", "percentage"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())
