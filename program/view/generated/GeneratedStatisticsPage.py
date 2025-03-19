@@ -50,7 +50,7 @@ class Ui_Form(object):
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
         self.statement = QtWidgets.QLabel(Form)
-        self.statement.setGeometry(QtCore.QRect(230, 490, 141, 16))
+        self.statement.setGeometry(QtCore.QRect(470, 370, 511, 61))
         self.statement.setObjectName("statement")
         self.progressBarSubtitle = QtWidgets.QLabel(Form)
         self.progressBarSubtitle.setGeometry(QtCore.QRect(170, 260, 271, 31))
@@ -59,10 +59,16 @@ class Ui_Form(object):
         self.progressBarSubtitle.setFont(font)
         self.progressBarSubtitle.setObjectName("progressBarSubtitle")
         self.progressBarTitle = QtWidgets.QLabel(Form)
-        self.progressBarTitle.setGeometry(QtCore.QRect(210, 200, 58, 16))
+        self.progressBarTitle.setGeometry(QtCore.QRect(170, 170, 271, 71))
+        font = QtGui.QFont()
+        font.setPointSize(40)
+        self.progressBarTitle.setFont(font)
         self.progressBarTitle.setObjectName("progressBarTitle")
         self.percentage = QtWidgets.QLabel(Form)
-        self.percentage.setGeometry(QtCore.QRect(390, 570, 58, 16))
+        self.percentage.setGeometry(QtCore.QRect(180, 350, 191, 101))
+        font = QtGui.QFont()
+        font.setPointSize(70)
+        self.percentage.setFont(font)
         self.percentage.setObjectName("percentage")
 
         self.retranslateUi(Form)
@@ -75,8 +81,8 @@ class Ui_Form(object):
         self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:italic;\">Statistics</span></p></body></html>"))
         self.statement.setText(_translate("Form", "Statement"))
         self.progressBarSubtitle.setText(_translate("Form", "Let\'s see how far you\'ve come!"))
-        self.progressBarTitle.setText(_translate("Form", "progressBarTitle"))
-        self.percentage.setText(_translate("Form", "percentage"))
+        self.progressBarTitle.setText(_translate("Form", "Progress Bar"))
+        self.percentage.setText(_translate("Form", "%"))
 
 
 if __name__ == "__main__":
