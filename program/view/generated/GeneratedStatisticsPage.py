@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\program\view\uiFiles\statistics.ui'
+# Form implementation generated from reading ui file 'statistics.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -16,7 +16,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(1440, 789)
         self.tbl_stats = QtWidgets.QTableWidget(Form)
-        self.tbl_stats.setGeometry(QtCore.QRect(230, 190, 1001, 511))
+        self.tbl_stats.setGeometry(QtCore.QRect(230, 230, 1001, 471))
         self.tbl_stats.setStyleSheet("QTableWidget {\n"
 "                border: 2px solid black;\n"
 "                background-color: #ECECEC;\n"
@@ -44,7 +44,7 @@ class Ui_Form(object):
         self.tbl_stats.horizontalHeader().setCascadingSectionResizes(False)
         self.tbl_stats.horizontalHeader().setDefaultSectionSize(250)
         self.tbl_stats.horizontalHeader().setMinimumSectionSize(19)
-        self.tbl_stats.verticalHeader().setDefaultSectionSize(30)
+        self.tbl_stats.verticalHeader().setDefaultSectionSize(70)
         self.tbl_stats.verticalHeader().setMinimumSectionSize(70)
         self.tbl_stats.verticalHeader().setSortIndicatorShown(False)
         self.close_btn = QtWidgets.QPushButton(Form)
@@ -66,7 +66,6 @@ class Ui_Form(object):
         font.setPointSize(-1)
         font.setBold(True)
         font.setItalic(True)
-        font.setWeight(75)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("QLabel {\n"
 "                color: black;\n"
@@ -78,6 +77,10 @@ class Ui_Form(object):
 "                border: 2px solid black;\n"
 "            }")
         self.label_2.setObjectName("label_2")
+        self.progressBar = QtWidgets.QProgressBar(Form)
+        self.progressBar.setGeometry(QtCore.QRect(230, 192, 1001, 21))
+        self.progressBar.setProperty("value", 24)
+        self.progressBar.setObjectName("progressBar")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
