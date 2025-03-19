@@ -33,17 +33,17 @@ class StatisticsPage(QtWidgets.QWidget, Ui_Form):
     def changeStatement(self):
         progress = self.getProgressBarValue()
         if progress == 0:
-            self.statement.setText("Just getting started! 🚀")
+            self.statement.setText("Just getting started!")
         elif 0 < progress <= 25:
-            self.statement.setText("Keep going! You're on your way! 💪")
+            self.statement.setText("Keep going! You're on your way!")
         elif 26 <= progress <= 50:
-            self.statement.setText("You're making progress! Keep it up! 👍")
+            self.statement.setText("You're making progress! Keep it up!")
         elif 51 <= progress <= 75:
-            self.statement.setText("Almost there! Great job! 🌟")
+            self.statement.setText("Almost there! Great job!")
         elif 76 <= progress < 100:
-            self.statement.setText("So close! Finish strong! 💯")
+            self.statement.setText("So close! Finish strong!")
         else:
-            self.statement.setText("Congratulations! You did it! 🎉")
+            self.statement.setText("Congratulations! You did it!")
 
                 
         
