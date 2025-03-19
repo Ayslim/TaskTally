@@ -13,69 +13,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QTableWidget" name="tbl_stats">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>190</y>
-     <width>1001</width>
-     <height>511</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QTableWidget {
-                border: 2px solid black;
-                background-color: #ECECEC;
-                border-radius: 5px;
-            }
-            
-            QHeaderView::section {
-                background-color: #d3d3d3;
-                font-size: 14pt; 
-                font-weight: bold;
-                color: black;
-                padding: 5px;
-            }</string>
-   </property>
-   <attribute name="horizontalHeaderCascadingSectionResizes">
-    <bool>false</bool>
-   </attribute>
-   <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>250</number>
-   </attribute>
-   <attribute name="horizontalHeaderMinimumSectionSize">
-    <number>19</number>
-   </attribute>
-   <attribute name="verticalHeaderDefaultSectionSize">
-    <number>30</number>
-   </attribute>
-   <attribute name="verticalHeaderMinimumSectionSize">
-    <number>70</number>
-   </attribute>
-   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
-    <bool>false</bool>
-   </attribute>
-   <column>
-    <property name="text">
-     <string>Task completed</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Points</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Date</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Total points</string>
-    </property>
-   </column>
-  </widget>
   <widget class="QPushButton" name="close_btn">
    <property name="geometry">
     <rect>
@@ -113,24 +50,126 @@
    <property name="font">
     <font>
      <pointsize>-1</pointsize>
-     <weight>75</weight>
      <italic>true</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel {
-                color: black;
+                color: rgb(7, 88, 157);
             	   font-size: 48px;
                 font-style: italic;
                 font-weight: bold;
                 padding: 10px;
                 border-radius: 5px;
-                border: 2px solid black;
+                border: 2px solid rgb(7, 88, 157);
             }</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-style:italic;&quot;&gt;Statistics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>310</y>
+     <width>1001</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statement">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>370</y>
+     <width>511</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> color: rgb(7, 88, 157);
+       </string>
+   </property>
+   <property name="text">
+    <string>Statement</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="progressBarSubtitle">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>260</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> color: rgb(7, 88, 157);
+       </string>
+   </property>
+   <property name="text">
+    <string>Let's see how far you've come!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="progressBarTitle">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>170</y>
+     <width>271</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">                color: rgb(7, 88, 157);
+            	   font-size: 40px;
+            </string>
+   </property>
+   <property name="text">
+    <string>Progress Bar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="percentage">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>350</y>
+     <width>191</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>70</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> color: rgb(7, 88, 157);
+       </string>
+   </property>
+   <property name="text">
+    <string>%</string>
    </property>
   </widget>
  </widget>
