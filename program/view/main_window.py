@@ -12,8 +12,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         controller = TaskListController()
-        taskPage = TaskPage(controller)
         statisticsPage = StatisticsPage(controller)
+        taskPage = TaskPage(controller, statisticsPage)
         selfCarePage = SelfCareTipsPage()
         infoPage = InfoPage()
 

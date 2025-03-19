@@ -23,3 +23,14 @@ class TaskListController:
     
     def addTaskToDatabase(self, customTaskDescription, customTaskPoints):
         self.ref.child(customTaskDescription).set({"completed": False, "score": customTaskPoints})
+
+    def get_total_score(self):
+        tasks = self.fetch_from_firebase()
+        return sum(task["score"] for task in tasks.values() if task["completed"])
+    
+    def get_max_score(self):
+        return 100
+    
+    def getProgressBarValue(self):
+        return int((self.get_total_score() / self.get_max_score()) * 100)
+    
