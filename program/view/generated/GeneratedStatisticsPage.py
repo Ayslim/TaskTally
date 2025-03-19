@@ -33,24 +33,27 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
-        font.setItalic(True)
+        font.setItalic(False)
+        font.setKerning(True)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("QLabel {\n"
 "                color: rgb(7, 88, 157);\n"
 "                   font-size: 48px;\n"
-"                font-style: italic;\n"
-"                font-weight: bold;\n"
+"              font-weight: bold;\n"
 "                padding: 10px;\n"
-"                border-radius: 5px;\n"
-"                border: 2px solid rgb(7, 88, 157);\n"
-"            }")
+"                  }")
         self.label_2.setObjectName("label_2")
         self.progressBar = QtWidgets.QProgressBar(Form)
-        self.progressBar.setGeometry(QtCore.QRect(170, 310, 1001, 21))
+        self.progressBar.setGeometry(QtCore.QRect(170, 310, 1001, 71))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.progressBar.sizePolicy().hasHeightForWidth())
+        self.progressBar.setSizePolicy(sizePolicy)
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
         self.statement = QtWidgets.QLabel(Form)
-        self.statement.setGeometry(QtCore.QRect(470, 370, 511, 61))
+        self.statement.setGeometry(QtCore.QRect(420, 370, 511, 61))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.statement.setFont(font)

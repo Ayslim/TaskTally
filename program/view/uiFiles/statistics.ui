@@ -50,20 +50,18 @@
    <property name="font">
     <font>
      <pointsize>-1</pointsize>
-     <italic>true</italic>
+     <italic>false</italic>
      <bold>true</bold>
+     <kerning>true</kerning>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel {
                 color: rgb(7, 88, 157);
             	   font-size: 48px;
-                font-style: italic;
-                font-weight: bold;
+              font-weight: bold;
                 padding: 10px;
-                border-radius: 5px;
-                border: 2px solid rgb(7, 88, 157);
-            }</string>
+                  }</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-style:italic;&quot;&gt;Statistics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -75,8 +73,14 @@
      <x>170</x>
      <y>310</y>
      <width>1001</width>
-     <height>21</height>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="value">
     <number>24</number>
@@ -85,7 +89,7 @@
   <widget class="QLabel" name="statement">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>420</x>
      <y>370</y>
      <width>511</width>
      <height>61</height>
