@@ -25,13 +25,13 @@ class TaskPage(QtWidgets.QWidget, Ui_Form):
         self.taskListView.itemChanged.connect(self.taskUpdated)
         self.customTaskBtn.clicked.connect(self.taskAdded)
         self.updateTotalScore()
-        self.statistics_page.updateProgressBar()  # Ensure it's updated initially
+
+        self.statistics_page.updateProgressBar() 
 
     # Updates each item in the list, which causes taskUpdated() to be run, which updates the total score and the completed status in the db
     def resetAllTasks(self):
         for item in self.get_list_of_QListWidgetItems():
             item.setCheckState(QtCore.Qt.Unchecked)
-        self.statistics_page.updateProgressBar()  # Update progress bar after reset
 
     # The task wask checked or unchecked in the UI. Let's update the completed status in the database, and update the total score label
     def taskUpdated(self, item):
@@ -80,4 +80,4 @@ class TaskPage(QtWidgets.QWidget, Ui_Form):
         item.setCheckState(QtCore.Qt.Unchecked)
         self.taskListView.addItem(item)
 
-        self.statistics_page.updateProgressBar()  # Update progress bar after new task is added
+        self.statistics_page.updateProgressBar()
