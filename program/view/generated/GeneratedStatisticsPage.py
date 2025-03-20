@@ -18,35 +18,39 @@ class Ui_Form(object):
         self.close_btn = QtWidgets.QPushButton(Form)
         self.close_btn.setGeometry(QtCore.QRect(30, 30, 90, 30))
         self.close_btn.setStyleSheet("QPushButton {\n"
-"                color: black;\n"
-"              border: 2px solid black;\n"
+"                color: white;\n"
+"              border: 2px solid #008CBA;\n"
 "              border-radius: 5px;\n"
+"              background-color: #008CBA\n"
 "            }\n"
 "           QPushButton:hover {\n"
-"                background-color: #d3d3d3;\n"
+"                background-color: #005A9E;\n"
 "            }\n"
-"            \n"
-"          ")
+"            ")
         self.close_btn.setObjectName("close_btn")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(500, 70, 461, 81))
+        self.label_2.setGeometry(QtCore.QRect(500, 40, 461, 111))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(True)
-        font.setItalic(True)
+        font.setWeight(75)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("QLabel {\n"
-"                color: rgb(7, 88, 157);\n"
-"                   font-size: 48px;\n"
-"                font-style: italic;\n"
+"                color: #005A9E;\n"
+"                font-size: 48px;\n"
 "                font-weight: bold;\n"
 "                padding: 10px;\n"
 "                border-radius: 5px;\n"
-"                border: 2px solid rgb(7, 88, 157);\n"
-"            }")
+"                border: 2px solid #005A9E;\n"
+"            }\n"
+"")
         self.label_2.setObjectName("label_2")
         self.progressBar = QtWidgets.QProgressBar(Form)
         self.progressBar.setGeometry(QtCore.QRect(170, 310, 1001, 21))
+        self.progressBar.setStyleSheet("QProgressBar {\n"
+"                color: #005A9E;    \n"
+"            }\n"
+"")
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
         self.statement = QtWidgets.QLabel(Form)
@@ -58,7 +62,7 @@ class Ui_Form(object):
 "       ")
         self.statement.setObjectName("statement")
         self.progressBarSubtitle = QtWidgets.QLabel(Form)
-        self.progressBarSubtitle.setGeometry(QtCore.QRect(170, 260, 271, 31))
+        self.progressBarSubtitle.setGeometry(QtCore.QRect(170, 260, 471, 31))
         font = QtGui.QFont()
         font.setPointSize(20)
         self.progressBarSubtitle.setFont(font)
@@ -69,7 +73,6 @@ class Ui_Form(object):
         self.progressBarTitle.setGeometry(QtCore.QRect(170, 170, 271, 71))
         font = QtGui.QFont()
         font.setPointSize(-1)
-        font.setBold(True)
         self.progressBarTitle.setFont(font)
         self.progressBarTitle.setStyleSheet("                color: rgb(7, 88, 157);\n"
 "                   font-size: 40px;\n"
@@ -91,7 +94,7 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.close_btn.setText(_translate("Form", "Close"))
-        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:italic;\">Statistics</span></p></body></html>"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-style:normal;\">Statistics</span></p></body></html>"))
         self.statement.setText(_translate("Form", "Statement"))
         self.progressBarSubtitle.setText(_translate("Form", "Let\'s see how far you\'ve come!"))
         self.progressBarTitle.setText(_translate("Form", "Progress Bar"))
